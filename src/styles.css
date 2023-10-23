@@ -22,3 +22,7 @@ body {
   --normal-gray: #f2f3f3;
   --text-color: #3d4a7d;
 }
+
+.text-primary {
+  color: var(--primary-color);
+}

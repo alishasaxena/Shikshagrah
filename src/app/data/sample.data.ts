@@ -1,3 +1,5 @@
+import { Statement } from "@angular/compiler";
+
 export const navigationLinks: { label: string; route: string }[] = [
   { label: 'Home', route: '/' },
   { label: 'Approach', route: '/approach' },
@@ -6,10 +8,29 @@ export const navigationLinks: { label: string; route: string }[] = [
 ];
 
 export const heroData: HeroSection = {
-  title: 'Welcome to Our Website',
-  subtitle: 'Discover Amazing Things Here',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  title: 'Vidya amrit',
+  subtitle: 'small steps to build great schools',
+  description: 'Vidya Amrit aims to encourage, recognize, and nurture innovations across the 1.5 million school in our eductaion system, by breaking down big ideas into a series of micro-improvements.',
 };
+
+export const stats: Stats[] = [
+  {
+    stat: '30',
+    desc: 'State/UTs',
+  },
+  {
+    stat: '290+',
+    desc: 'Districts',
+  },
+  {
+    stat: '50+',
+    desc: 'Unique MI Projects',
+  },
+  {
+    stat:' 5.98L+', 
+    desc: 'Total number of micro-improvements',
+  }
+]
 
 export const cardsData: Card[] = [
   {
@@ -129,6 +150,11 @@ interface Card {
   description: string;
   image: string; 
   buttonLabel: string;
+}
+
+interface Stats {
+  stat: string;
+  desc: string;
 }
 
 interface HeroSection {

@@ -1,2 +1,16 @@
 <!-- <app-header></app-header> -->
+<section class="hero-section w-1/2">
+    <h1 class="text-6xl font-semibold tracking-wider uppercase">
+       {{heroData.title}}
+    </h1>
+    <h2 class="capitalize text-2xl font-semibold italic text-primary">{{heroData.subtitle}}</h2>
+    <p class="my-4 text-md tracking-wider font-light text-center desc">{{heroData.description}}</p>
+</section>
 
+<section>
+    <div *ngFor="let st of stat" class="transform  rounded-xl h-40 w-40 sm:h-64 sm:w-64 bg-white shadow-xl transition duration-300 hover:scale-105">
+        <div class="flex h-full justify-center items-center">
+            <span class="font-bold text-gray-500">Scale</span>
+        </div>
+    </div>
+</section>
