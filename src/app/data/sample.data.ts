@@ -17,42 +17,49 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m1.png',
     buttonLabel: 'Learn More',
+    route: '/infrastructure'
   },
   {
     title: 'curriculum, Pedagogy Assessment ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m3.png',
     buttonLabel: 'Explore',
+    route: '/infrastructure'
   },
   {
     title: 'Human Resources',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m4.png',
     buttonLabel: 'Read More',
+    route: '/infrastructure'
   },
   {
     title: 'Inclusive Practices',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m5.png',
     buttonLabel: 'Discover',
+    route: '/infrastructure'
   },
   {
     title: 'Management & Governance',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m6.png',
     buttonLabel: 'Get Started',
+    route: '/infrastructure'
   },
   {
     title: 'Leadership',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m7.png',
     buttonLabel: 'View Details',
+    route: '/infrastructure'
   },
   {
     title: 'Beneficiary satisfaction',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m2.png',
     buttonLabel: 'See More',
+    route: '/infrastructure'
   },
 ];
 
@@ -69,31 +76,31 @@ export const blogsData: Blog[] = [
     tags: ['HM & Teachers ', 'Panchayat'],
     date: '4 weeks'
   },
-    {
+  {
     title: 'To improve the resources available in the school',
     description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
     tags: ['HM'],
     date: '4 weeks'
   },
-    {
+  {
     title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
     description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
     tags: ['Teachers', 'Education'],
     date: '4 weeks'
   },
-    {
+  {
     title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
     description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
-     {
+  {
     title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
     description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
- 
+
 ];
 
 
@@ -127,8 +134,9 @@ export interface ExposureVisitStep {
 interface Card {
   title: string;
   description: string;
-  image: string; 
+  image: string;
   buttonLabel: string;
+  route: string;
 }
 
 interface HeroSection {
