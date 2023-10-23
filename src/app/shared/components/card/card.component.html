@@ -1,1 +1,20 @@
-<p>card works!</p>
+<!-- card.component.html -->
+
+<div class="card" (mouseenter)="onCardHover()" (mouseleave)="onCardLeave()">
+    <a [routerLink]="link">
+        <img class="rounded-t-lg" [src]="imageSrc" alt="" />
+    </a>
+    <div class="">
+        <a [routerLink]="link" class="card-title">
+            {{ title }}
+        </a>
+        <div *ngIf="active">
+            <p class="card-description">{{ description }}</p>
+            <!-- button -->
+            <a [routerLink]="buttonLink" class="view-projects-btn">
+                View Projects
+            </a>
+        </div>
+       
+    </div>
+</div>

@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { MicroImprovementComponent } from './modules/micro-improvement/micro-improvement.component';
 
 const routes: Routes = [
-  { path: '/', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'micro-improvement', component: MicroImprovementComponent },
 ];
 

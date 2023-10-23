@@ -1,4 +1,3 @@
-// Sample Data
 export const navigationLinks: { label: string; route: string }[] = [
   { label: 'Home', route: '/' },
   { label: 'Approach', route: '/approach' },
@@ -14,76 +13,121 @@ export const heroData: HeroSection = {
 
 export const cardsData: Card[] = [
   {
-    title: 'Card 1',
-    description: 'Description for Card 1',
-    image: 'path/to/image1.jpg',
+    title: 'Infrastructure',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+    image: 'assets/images/micro-improve/m1.png',
     buttonLabel: 'Learn More',
   },
   {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    image: 'path/to/image2.jpg',
+    title: 'curriculum, Pedagogy Assessment ',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
+    image: 'assets/images/micro-improve/m3.png',
     buttonLabel: 'Explore',
   },
   {
-    title: 'Card 3',
-    description: 'Description for Card 3',
-    image: 'path/to/image3.jpg',
+    title: 'Human Resources',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
+    image: 'assets/images/micro-improve/m4.png',
     buttonLabel: 'Read More',
   },
   {
-    title: 'Card 4',
-    description: 'Description for Card 4',
-    image: 'path/to/image4.jpg',
+    title: 'Inclusive Practices',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
+    image: 'assets/images/micro-improve/m5.png',
     buttonLabel: 'Discover',
   },
   {
-    title: 'Card 5',
-    description: 'Description for Card 5',
-    image: 'path/to/image5.jpg',
+    title: 'Management & Governance',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+    image: 'assets/images/micro-improve/m6.png',
     buttonLabel: 'Get Started',
   },
   {
-    title: 'Card 6',
-    description: 'Description for Card 6',
-    image: 'path/to/image6.jpg',
+    title: 'Leadership',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
+    image: 'assets/images/micro-improve/m7.png',
     buttonLabel: 'View Details',
   },
   {
-    title: 'Card 7',
-    description: 'Description for Card 7',
-    image: 'path/to/image7.jpg',
+    title: 'Beneficiary satisfaction',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
+    image: 'assets/images/micro-improve/m2.png',
     buttonLabel: 'See More',
   },
 ];
 
 export const blogsData: Blog[] = [
   {
-    title: 'Card 1',
-    description: 'Description for Card 1',
-    details: [
-      { time: '10:00 AM', title: 'Event 1', description: 'Description for Event 1', tags: ['Tag1', 'Tag2'] },
-      { time: '12:00 PM', title: 'Event 2', description: 'Description for Event 2', tags: ['Tag3', 'Tag4'] },
-      // Add more events as needed
-    ],
+    title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
   },
   {
-    title: 'Card 2',
-    description: 'Description for Card 2',
-    details: [
-      { time: '2:00 PM', title: 'Event 3', description: 'Description for Event 3', tags: ['Tag5', 'Tag6'] },
-      { time: '4:00 PM', title: 'Event 4', description: 'Description for Event 4', tags: ['Tag7', 'Tag8'] },
-      // Add more events as needed
-    ],
+    title: 'To enable community to improve the infrastructural development of community surrounding to make the physical space engaging and lively',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'Panchayat'],
+    date: '4 weeks'
   },
-  // Add more cards as needed
+    {
+    title: 'To improve the resources available in the school',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM'],
+    date: '4 weeks'
+  },
+    {
+    title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['Teachers', 'Education'],
+    date: '4 weeks'
+  },
+    {
+    title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HT And Officials'],
+    date: '4 weeks'
+  },
+     {
+    title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HT And Officials'],
+    date: '4 weeks'
+  },
+ 
 ];
 
-// Interface for Cards
+
+const exposureVisit: ExposureVisit = {
+  objective: "To conduct an exposure visit for parents and students to local primary schools.",
+  description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
+  recommendedDuration: "4 Weeks",
+  sqaaDomain: "Curriculum, Pedagogy Assessment",
+  subDomain: "Access",
+  stepsTaken: [
+    { stepNumber: 1, description: "Identify the local primary school to visit for exposure." },
+    { stepNumber: 2, description: "Connect with local primary school HM to schedule an exposure visit." },
+    { stepNumber: 3, description: "Inform parents about the primary school and exposure visit to school." },
+    { stepNumber: 4, description: "Plan the visit to the primary school." },
+    { stepNumber: 5, description: "Plan an interactive session with the primary school HM, teacher, and students." },
+    { stepNumber: 6, description: "Take feedback from the parents on the visit." }
+  ]
+};
+export interface ExposureVisit {
+  objective: string;
+  description: string;
+  recommendedDuration: string;
+  sqaaDomain: string;
+  subDomain: string;
+  stepsTaken: ExposureVisitStep[];
+}
+export interface ExposureVisitStep {
+  stepNumber: number;
+  description: string;
+}
 interface Card {
   title: string;
   description: string;
-  image: string; // Path to the image
+  image: string; 
   buttonLabel: string;
 }
 
@@ -101,9 +145,9 @@ interface CardDetail {
   tags: string[];
 }
 
-// Interface for Cards
 interface Blog {
   title: string;
   description: string;
-  details: CardDetail[];
+  date: string;
+  tags: any;
 }

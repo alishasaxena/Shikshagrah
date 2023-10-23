@@ -8,6 +8,8 @@ import { CardComponent } from './shared/components/card/card.component';
 import { BlogComponent } from './shared/components/blog/blog.component';
 import { MicroImprovementComponent } from './modules/micro-improvement/micro-improvement.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InfrastructureComponent } from './modules/infrastructure/infrastructure.component';
+import { ContentPageComponent } from './shared/content-page/content-page.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     CardComponent,
     BlogComponent,
-    MicroImprovementComponent
+    MicroImprovementComponent,
+    InfrastructureComponent,
+    ContentPageComponent
   ],
   imports: [
     BrowserModule,

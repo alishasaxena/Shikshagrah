@@ -1,0 +1,56 @@
+.blog {
+  display: flex;
+  width: 21.875rem;
+  height: 21.875rem;
+  padding: 1.25rem 0.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  background-color: #d8d8d8;
+  /* opacity: 60%; */
+  border: 1px solid #ccc;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #888;
+  font-family: Happy Monkey;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  font-weight: 400 !important;
+  font-family: Happy Monkey;
+}
+
+.description {
+  font-size: 1rem;
+  overflow: scroll;
+  color: #888;
+  font-weight: 400 !important;
+  font-family: Happy Monkey;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3125rem;
+  margin-top: auto;
+}
+
+.tag {
+  padding: 0.2rem 0.5rem;
+  color: #252b42;
+
+  font-family: Happy Monkey;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+  border-radius: 3.125rem;
+  background: #edde5d;
+}

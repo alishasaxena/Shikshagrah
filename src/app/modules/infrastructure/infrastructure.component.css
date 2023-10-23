@@ -1,0 +1,6 @@
+.blog-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6.38rem;
+  padding: 5.81rem;
+}

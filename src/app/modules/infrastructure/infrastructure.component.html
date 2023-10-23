@@ -1,0 +1,6 @@
+
+<section class="blog-section">
+    <div *ngFor="let blog of blogs">
+        <app-blog [date]="blog.date" [title]="blog.title" [description]="blog.description" [tags]="blog.tags"></app-blog>
+    </div>
+</section>
