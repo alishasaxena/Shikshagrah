@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class DropdownCheckboxComponent {
   @Input() text!: string;
-
+  @Input() lists! : any;
   isOpen = false;
 
   toggleDropdown() {

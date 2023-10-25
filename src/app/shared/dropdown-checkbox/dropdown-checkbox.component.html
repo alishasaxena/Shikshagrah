@@ -53,7 +53,7 @@
       class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
       aria-labelledby="dropdownHelperButton"
     >
-      <li>
+      <li *ngFor="let list of lists">
         <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
           <div class="flex items-center h-5">
             <input
@@ -69,13 +69,7 @@
               for="helper-checkbox-1"
               class="font-medium text-gray-900 dark:text-gray-300"
             >
-              <div>Enable notifications</div>
-              <p
-                id="helper-checkbox-text-1"
-                class="text-xs font-normal text-gray-500 dark:text-gray-300"
-              >
-                Some helpful instruction goes over here.
-              </p>
+              <div>{{list}}</div>
             </label>
           </div>
         </div>

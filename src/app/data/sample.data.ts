@@ -160,6 +160,32 @@ export const exposureVisit: ExposureVisit[] = [
     ]
   }
 ];
+
+export const sortOptions : string[] =  [
+    "Provision of Food (MDM, Canteen)",
+    "Safety Provision",
+    "Access (Enrolment Tracker, Dropout, UDISE)",
+    "Sports & Playground",
+    "Sanitation (Health and Hygiene)",
+    "Safety (Physical and Psychological)"
+]
+
+export const filterOptions: string[] = [
+    "Recently Uploaded",
+    "Most Downloads",
+    "For Teachers",
+    "For HT/Officials",
+    "Z-A",
+    "A-Z"
+]
+
+export const roleOptions : string[] =  [
+    "Teachers",
+    "HM (Headmaster)",
+    "SMC (School Management Committee)",
+    "Education Leader",
+    "Panchayat"
+]
 export interface ExposureVisit {
   objective: string;
   description: string;
@@ -169,6 +195,7 @@ export interface ExposureVisit {
   subDomain: string;
   stepsTaken: any;
 }
+
 interface Card {
   title: string;
   description: string;
