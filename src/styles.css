@@ -24,9 +24,8 @@ body {
   /* background-image: url("/src/assets/images/Grain-Texture.png"); */
   font-family: "Happy Monkey", sans-serif;
 }
-
 .micro-parent h1 {
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Happy Monkey;
   font-size: 3rem;
@@ -35,7 +34,7 @@ body {
   letter-spacing: 0.01963rem;
 }
 .micro-parent p {
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Happy Monkey;
   font-size: 2rem;
