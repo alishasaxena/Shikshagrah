@@ -6,5 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./dropdown-checkbox.component.css']
 })
 export class DropdownCheckboxComponent {
-  @Input() text! : string;
+  @Input() text!: string;
+
+  isOpen = false;
+
+  toggleDropdown() {
+    this.isOpen = !this.isOpen;
+  }
+
+  closeDropdown() {
+    this.isOpen = false;
+  }
 }

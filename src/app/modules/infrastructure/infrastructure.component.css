@@ -9,7 +9,7 @@
 }
 .bar-options {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 2.5rem;
   align-self: stretch;
   width: 100%;
