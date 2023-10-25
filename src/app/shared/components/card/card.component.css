@@ -7,7 +7,7 @@
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.9375rem;
-  background: #fff;
+  background: var(--white-color);
 }
 .card:hover {
   height: auto;
@@ -42,7 +42,7 @@
 
 .view-projects-btn {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,4 +53,24 @@
   padding: 0.3rem 1rem;
   margin: 0 auto;
   margin-top: 1.62rem;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 480px) {
+  .card {
+    padding: 0.625rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .view-projects-btn {
+    font-size: 0.7rem;
+  }
 }

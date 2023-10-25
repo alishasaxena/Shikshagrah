@@ -16,9 +16,11 @@
                 </div>
                 <div>
                     <span>Recommended for:</span>
-                    <p class="tag">
-                        {{recommendedFor}}
-                    </p>
+                    <div class="flex gap-2">
+                        <p *ngFor="let rec of recommendedFor" class="tag">
+                            {{rec}}
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <span>SQAA Domain:</span>

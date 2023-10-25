@@ -13,3 +13,22 @@
   max-width: 28rem;
   /* text-align: justify; */
 }
+
+.stat-card {
+  width: 12rem;
+  height: 12rem;
+  padding: 2rem;
+}
+
+.stat-number {
+  color: var(--accent-color);
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.stat-text {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.7rem;
+}
