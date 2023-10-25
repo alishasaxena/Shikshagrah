@@ -1,62 +1,73 @@
-
 <header *ngIf="isHomePage">
-    <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
-        <a class="flex items-center flex-wrap gap-2">
-            <img src='assets/images/india-flag-icon.svg' class="flag-img"/>
-            <a class="text-xs">Government of India</a>
-        </a>
-        <div>
-            <ul class="flex items-center flex-wrap gap-2 text-xs list">
-                <li>
-                    <img/>
-                    <a>Main Content</a>
-                </li>
-                <li>
-                    <a>A+</a>
-                    <img />
-                    <a>A-</a>
-                </li>
-                <li>
-                    <img />
-                    <a>Screen Reader</a>
-                </li>
-            </ul>
-        </div>
+  <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
+    <a class="flex items-center flex-wrap gap-2">
+      <img src="assets/images/india-flag-icon.svg" class="flag-img" />
+      <a class="text-xs">Government of India</a>
+    </a>
+    <div>
+      <ul class="flex items-center flex-wrap gap-2 text-xs list">
+        <li>
+          <img />
+          <a>Main Content</a>
+        </li>
+        <li>
+          <a>A+</a>
+          <img />
+          <a>A-</a>
+        </li>
+        <li>
+          <img />
+          <a>Screen Reader</a>
+        </li>
+      </ul>
     </div>
-    <div class="flex items-center justify-between px-10 py-3">
-        <div class="ministry-logo flex items-center gap-2">
-            <img class="" src='assets/images/satya.png'/>
-            <div>
-                <p>Ministry of Eductaion</p>
-                <span>
-                    Department of School Education & Literacy
-                </span>
-            </div>
-        </div>
-        <div class="flex items-center gap-4 ">
-            <div class="vidya-text-wrap">
-                <h2 class="vidya-text">Vidya Amrit</h2>
-            </div>
-            <div class="left-nav">
-                <p class="text-sm px-0">National Digital Education Architecture</p>
-                <span class="text-xs px-0">Digital Infrastructure for the education system</span>
-            </div>
-        </div>
-       
+  </div>
+  <div class="flex items-center justify-between px-10 py-3">
+    <div class="ministry-logo flex items-center gap-2">
+      <img class="" src="assets/images/satya.png" />
+      <div>
+        <p>Ministry of Eductaion</p>
+        <span> Department of School Education & Literacy </span>
+      </div>
     </div>
-    <nav class="h-12 p-3 nav px-8">
-        <ul class="flex gap-3 flex-wrap items-center">
-            <li class="px-4" *ngFor="let link of navLinks">
-                <a class="text-sm text-white" [routerLink]="link.route">{{ link.label }}</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="flex items-center gap-4">
+      <div class="vidya-text-wrap">
+        <h2 class="vidya-text">Vidya Amrit</h2>
+      </div>
+      <div class="left-nav">
+        <p class="text-sm px-0">National Digital Education Architecture</p>
+        <span class="text-xs px-0"
+          >Digital Infrastructure for the education system</span
+        >
+      </div>
+    </div>
+  </div>
+  <nav class="h-12 p-3 nav px-8">
+    <ul class="flex gap-3 flex-wrap items-center">
+      <li class="px-4" *ngFor="let link of navLinks">
+        <a class="text-sm text-white" [routerLink]="link.route">{{
+          link.label
+        }}</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<header class="back-nav" *ngIf="!isHomePage">
-    <div >
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="33" viewBox="0 0 35 33" fill="none">
-            <path d="M16.625 31.25L2 16.625L16.625 2M4.03125 16.625H33.6875" stroke="#3D4A7D" stroke-width="2.25"
-                stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </div>
+<header class="back-nav cursor-pointer" *ngIf="!isHomePage">
+  <div (click)="goBack()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="35"
+      height="33"
+      viewBox="0 0 35 33"
+      fill="none"
+    >
+      <path
+        d="M16.625 31.25L2 16.625L16.625 2M4.03125 16.625H33.6875"
+        stroke="#3D4A7D"
+        stroke-width="2.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </div>
 </header>

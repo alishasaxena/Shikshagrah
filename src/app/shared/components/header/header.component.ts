@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { navigationLinks } from 'src/app/data/sample.data';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
   isHomePage: boolean = false;
 
 
-  constructor(private dataService: DataService, private router: Router) { }
+  constructor(private dataService: DataService, private router: Router, private location: Location) { }
   ngOnInit(): void {
     this.navLinks = navigationLinks;
     this.router.events.subscribe((event: any) => {
@@ -30,4 +31,8 @@ export class HeaderComponent implements OnInit {
       this.isHomePage = true
     }
   }
+  goBack() {
+    this.location.back();
+  }
+
 }
