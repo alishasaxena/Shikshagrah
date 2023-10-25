@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { blogsData, exposureVisit } from 'src/app/data/sample.data';
+import { blogsData } from 'src/app/data/sample.data';
 
 @Component({
   selector: 'app-infrastructure',
@@ -8,5 +8,5 @@ import { blogsData, exposureVisit } from 'src/app/data/sample.data';
 })
 export class InfrastructureComponent {
   blogs = blogsData;
-  exp = exposureVisit;
+  // exp = exposureVisit;
 }
