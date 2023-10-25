@@ -86,7 +86,7 @@
   flex-wrap: wrap;
   width: 3.125rem;
   height: 3.125rem;
-  padding: 1.25rem 1.875rem;
+  /* padding: 1.25rem 1.875rem; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -106,6 +106,7 @@
   display: flex;
   align-items: center;
   gap: 2.81rem;
+  /* flex-wrap: wrap; */
 }
 .desc-steps {
   display: flex;
@@ -114,18 +115,38 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .objective {
     font-size: 1rem;
+    padding: 2rem 1rem;
   }
 
   .description-content p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .description-content span {
     font-size: 0.9rem;
   }
   .tag {
     font-size: 0.8rem !important;
+  }
+  .description-content {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .list-steps {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .list-steps p {
+    font-size: 1rem;
+  }
+  .content {
+    padding: 0;
+  }
+  .steps-content {
+    width: 100%;
+    margin: 0 1rem;
   }
 }

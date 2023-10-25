@@ -28,17 +28,8 @@
 }
 
 .infra {
-  background: linear-gradient(
-    to left,
-    #37678d,
-    #4f7c9b,
-    #3d5173,
-    #495372,
-    #5e5e6f,
-    #bca868
-  );
-  /* background-color: black; */
-  /* height: 100vh; */
+  background-image: url(../../../assets/images/bg.png);
+  background-size: cover;
   background-blend-mode: color-dodge;
 }
 
