@@ -12,6 +12,7 @@ import { InfrastructureComponent } from './modules/infrastructure/infrastructure
 import { ContentPageComponent } from './shared/content-page/content-page.component';
 import { DropdownCheckboxComponent } from './shared/dropdown-checkbox/dropdown-checkbox.component';
 import { ExplorePageComponent } from './modules/explore-page/explore-page.component';
+import { SingleBlogContentComponent } from './modules/single-blog-content/single-blog-content.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ExplorePageComponent } from './modules/explore-page/explore-page.compon
     InfrastructureComponent,
     ContentPageComponent,
     DropdownCheckboxComponent,
-    ExplorePageComponent
+    ExplorePageComponent,
+    SingleBlogContentComponent
   ],
   imports: [
     BrowserModule,
