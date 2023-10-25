@@ -1,0 +1,32 @@
+<button id="dropdownHelperButton" data-dropdown-toggle="dropdownHelper"
+    class="sort"
+    type="button">
+    {{text}}
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+        <path
+            d="M5.26212 9.48145L11.8143 17.1277C11.9199 17.2509 12.0509 17.3498 12.1983 17.4176C12.3458 17.4853 12.5061 17.5204 12.6684 17.5204C12.8306 17.5204 12.991 17.4853 13.1384 17.4176C13.2858 17.3498 13.4168 17.2509 13.5224 17.1277L20.0746 9.48145C20.6999 8.75161 20.1815 7.62427 19.2206 7.62427H6.11431C5.15337 7.62427 4.63493 8.75161 5.26212 9.48145Z"
+            fill="#3D4A7D" />
+    </svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHelper"
+    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600">
+    <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperButton">
+        <li>
+            <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                <div class="flex items-center h-5">
+                    <input id="helper-checkbox-1" aria-describedby="helper-checkbox-text-1" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                </div>
+                <div class="ml-2 text-sm">
+                    <label for="helper-checkbox-1" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>Enable notifications</div>
+                        <p id="helper-checkbox-text-1" class="text-xs font-normal text-gray-500 dark:text-gray-300">Some
+                            helpful instruction goes over here.</p>
+                    </label>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

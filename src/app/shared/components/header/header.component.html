@@ -1,6 +1,6 @@
 
 <header>
-    <div class="h-9 mini-header px-3 py-3 flex items-center justify-between">
+    <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
         <a class="flex items-center flex-wrap gap-2">
             <img src='assets/images/india-flag-icon.svg' class="flag-img"/>
             <a class="text-xs">Government of India</a>
@@ -23,7 +23,7 @@
             </ul>
         </div>
     </div>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between px-10 py-3">
         <div class="ministry-logo flex items-center gap-2">
             <img class="" src='assets/images/satya.png'/>
             <div>
@@ -33,18 +33,18 @@
                 </span>
             </div>
         </div>
-        <div class="flex items-center gap-4">
-            <div>
+        <div class="flex items-center gap-4 ">
+            <div class="vidya-text-wrap">
                 <h2 class="vidya-text">Vidya Amrit</h2>
             </div>
-            <div >
+            <div class="left-nav">
                 <p class="text-sm px-0">National Digital Education Architecture</p>
                 <span class="text-xs px-0">Digital Infrastructure for the education system</span>
             </div>
         </div>
        
     </div>
-    <nav class="h-12 p-3 nav">
+    <nav class="h-12 p-3 nav px-8">
         <ul class="flex gap-3 flex-wrap items-center">
             <li class="px-4" *ngFor="let link of navLinks">
                 <a class="text-sm text-white" [routerLink]="link.route">{{ link.label }}</a>

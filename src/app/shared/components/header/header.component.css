@@ -40,3 +40,21 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.vidya-text-wrap {
+  margin-right: 2.5rem;
+}
+.left-nav p {
+  margin-bottom: -0.2rem;
+}
+.left-nav span {
+  font-size: 0.6rem;
+}
+
+.list li {
+  border-right: 1px solid gray;
+  padding-right: 1rem;
+}
+.list li:last-child {
+  border: none;
+}

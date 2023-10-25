@@ -1,1 +1,50 @@
-<p>content-page works!</p>
+<div class="main-content">
+    <div class="content">
+        <h1 class="objective">
+           <span>Objective:</span> {{objective}}
+        </h1>
+        <div class="desc-steps">
+            <div class="description-content">
+                <p>
+                    <span>Description:</span> {{description}}
+                </p>
+                <div>
+                    <span>Recommended duration:</span>
+                    <p>
+                        {{recommendedDuration}}
+                    </p>
+                </div>
+                <div>
+                    <span>Recommended for:</span>
+                    <p class="tag">
+                        {{recommendedFor}}
+                    </p>
+                </div>
+                <div>
+                    <span>SQAA Domain:</span>
+                    <p>
+                        {{sqaaDomain}}
+                    </p>
+                </div>
+                <div>
+                    <span>Sub- Domain:</span>
+                    <p>
+                        {{subDomain}}
+                    </p>
+                </div>
+            
+            </div>
+            
+            <ul class="steps-content">
+                <h2>Steps Taken-</h2>
+                <li class="list-steps" *ngFor="let step of stepsTaken; let indexOfelement=index;">
+                    <span>{{indexOfelement + 1}}</span>
+                    <p>
+                        {{step}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+</div>
