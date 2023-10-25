@@ -46,7 +46,6 @@
   <div
     *ngIf="isOpen"
     id="dropdownHelper"
-    (click)="closeDropdown()"
     (mouseleave)="closeDropdown()"
     class="z-10 dropdown-infra absolute"
   >
@@ -54,23 +53,45 @@
       class="space-y-1 text-sm text-gray-700 dark:text-gray-200"
       aria-labelledby="dropdownHelperButton"
     >
-      <li *ngFor="let list of lists">
+      <li *ngFor="let list of lists; let i = index">
         <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-          <div class="flex items-center h-5">
-            <input
-              id="helper-checkbox-1"
-              aria-describedby="helper-checkbox-text-1"
-              type="checkbox"
-              value=""
-              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-lg focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-            />
-          </div>
+          <!-- <div class="flex items-center h-5">
+            <input [id]="'helper-checkbox-' + i"  type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-lg focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+          </div> -->
+  <!-- <div className="inline-flex items-center">
+    <label className="relative flex cursor-pointer items-center rounded-full" htmlFor="checkbox">
+      <input type="checkbox" className="hidden" id="checkbox" defaultChecked={false} />
+      <div
+        className="w-5 h-5 border border-blue-gray-200 rounded-md transition-all bg-blue-900 opacity-0 group-hover:opacity-100">
+      </div>
+    </label>
+  </div> -->
+
+<div class="inline-flex items-center">
+  <label class="relative flex cursor-pointer items-center rounded-full" for="checkbox" data-ripple-dark="true">
+    <input type="checkbox"
+      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity  checked:bg-blue-900 checked:before:bg-white hover:before:opacity-10"
+      id="checkbox"  />
+    <div
+      class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+        stroke="currentColor" strokeWidth="1">
+        <path fillRule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clipRule="evenodd"></path>
+      </svg>
+    </div>
+  </label>
+</div>
+
+ 
+
+
+
           <div class="ml-2 text-sm">
-            <label
-              for="helper-checkbox-1"
-              class="font-medium text-gray-900 dark:text-gray-300"
-            >
-              <div class="text-infra">{{list}}</div>
+            <label [for]="'helper-checkbox-' + i" class="font-medium text-gray-900 dark:text-gray-300">
+              <div class="text-infra">{{ list }}</div>
             </label>
           </div>
         </div>

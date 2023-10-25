@@ -130,7 +130,7 @@ export const blogsData: Blog[] = [
 export const exposureVisit: ExposureVisit[] = [
   {
     objective: "To conduct an exposure visit for parents and students to local primary schools.",
-    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
+    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begins.",
     recommendedFor: ['HM & Teachers', 'SMC'],
     recommendedDuration: "4 Weeks",
     sqaaDomain: "Curriculum, Pedagogy Assessment",
@@ -164,7 +164,7 @@ export const exposureVisit: ExposureVisit[] = [
 ];
 
 export const  filterOptions: string[] =  [
-  "Physical Infrastructure",
+    "Physical Infrastructure",
     "Provision of Food (MDM, Canteen)",
     "Safety Provision",
     "Access (Enrolment Tracker, Dropout, UDISE)",

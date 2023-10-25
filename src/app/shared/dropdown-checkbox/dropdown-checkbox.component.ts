@@ -7,11 +7,21 @@ import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/
 })
 export class DropdownCheckboxComponent {
   @ViewChild('dropdownContainer') dropdownContainer!: ElementRef;
-
   @Input() text!: string;
   @Input() lists! : any;
   isOpen = false;
+  checked: boolean = false;
 
+   @Input() value!: string;
+  @Input() correct!: boolean;
+  @Input() error!: boolean;
+  @Input() disabled!: boolean;
+  @Input() borderRadius!: number;
+
+  private onChange: any;
+  private onTouched: any;
+
+  
   toggleDropdown() {
     this.isOpen = !this.isOpen;
   }

@@ -38,3 +38,134 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.bg-text-prime {
+  background-color: #223ea0 !important;
+}
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  display: none;
+}
+
+/* Style for the checkmark */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff; /* White checkmark */
+  border: 2px solid #223ea0 !important; /* Blue border */
+}
+
+/* Style for the checked state */
+.custom-checkbox input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #223ea0 !important;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom_container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 23px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.custom_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom_container .custom_checkmark {
+  margin-top: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.custom_container .custom_checkmark:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.custom_container:hover input ~ .custom_checkmark {
+  background-color: white;
+}
+
+.custom_container input:checked ~ .custom_checkmark {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.custom_container input:checked ~ .custom_checkmark:after {
+  display: block;
+}
+
+.custom_container .custom_checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--light-3);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.custom_container.correct input:checked ~ .custom_checkmark {
+  background-color: green;
+}
+
+.custom_container.error .custom_checkmark {
+  border-color: var(--text-color);
+}
+
+.custom_container.disabled .custom_checkmark {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  cursor: not-allowed;
+}
+
+.custom_container.disabled .custom_checkmark:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--text-color);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.custom_container.disabled input:hover ~ .custom_checkmark {
+  background-color: hotpink;
+  border-color: var(--text-color);
+}

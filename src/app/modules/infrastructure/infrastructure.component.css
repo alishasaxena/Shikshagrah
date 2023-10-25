@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6.38rem;
   padding: 5.81rem;
+  place-items: center;
 }
 .infra {
   padding-top: 3.33rem;
@@ -44,7 +45,21 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .blog-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .search-bar {
+    width: 25.77rem;
+  }
+  .bar-options {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .blog-section {
     grid-template-columns: 1fr;
     gap: 3rem;

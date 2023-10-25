@@ -8,10 +8,12 @@
     <a [routerLink]="link" class="card-title cursor-pointer">
       {{ title }}
     </a>
-    <div *ngIf="active">
-      <p class="card-description">{{ description }}</p>
+    <div *ngIf="active" >
+      <a [routerLink]="link">
+        <p class="card-description">{{ description }}</p>
+      </a>
       <!-- button -->
-      <a [routerLink]="buttonLink" class="view-projects-btn"> View Projects </a>
+      <a [routerLink]="link" class="view-projects-btn"> View Projects </a>
     </div>
   </div>
 </div>

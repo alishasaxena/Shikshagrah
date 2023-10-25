@@ -50,7 +50,16 @@
   font-size: 0.7rem;
   margin: 0;
 }
-
+.infra-texts {
+  text-align: center;
+  font-family: Happy Monkey;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+  color: var(--text-color);
+}
 .vidya-text {
   color: var(--accent-color);
   font-size: 1.4rem;
@@ -113,6 +122,10 @@
   text-transform: uppercase;
 }
 
+.ml-9 {
+  margin-left: 8rem;
+}
+
 @media only screen and (max-width: 700px) {
   .mini-header {
     display: none;
@@ -139,5 +152,17 @@
   .ministry-logo {
     justify-content: center;
     margin: 0 auto;
+  }
+  .arr {
+    display: none;
+  }
+  .dwn-btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin-right: auto;
+  }
+
+  .ml-9 {
+    justify-content: flex-end;
   }
 }
