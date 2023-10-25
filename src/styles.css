@@ -58,6 +58,11 @@ body {
   --accent-color: #ff603f;
   --normal-gray: #f2f3f3;
   --text-color: #3d4a7d;
+  --white-color: #fff;
+  --charcoal-gray: #888;
+  --blog-color: #ccc;
+  --tag-color: #edde5d;
+  --light-gray: #d8d8d8;
 }
 
 .text-primary {
@@ -74,5 +79,5 @@ body {
   line-height: normal;
   letter-spacing: 0.01963rem;
   border-radius: 3.125rem;
-  background: #edde5d;
+  background: var(--tag-color);
 }

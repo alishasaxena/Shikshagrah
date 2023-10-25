@@ -5,7 +5,7 @@
   align-items: center;
   gap: 1.0625rem;
   border-radius: 6.25rem;
-  background: #fff;
+  background: var(--white-color);
   color: rgba(117, 117, 117, 0.7);
   font-size: 1rem;
   font-style: normal;

@@ -8,9 +8,18 @@
 </section>
 
 <section>
-    <div *ngFor="let st of stat" class="transform  rounded-xl h-40 w-40 sm:h-64 sm:w-64 bg-white shadow-xl transition duration-300 hover:scale-105">
-        <div class="flex h-full justify-center items-center">
-            <span class="font-bold text-gray-500">Scale</span>
+    <div class="flex gap-6 justify-center">
+        <div *ngFor="let st of stat"
+            class=" transform  rounded-xl h-40 w-40 sm:h-64 sm:w-64 bg-white shadow-xl transition duration-300 hover:scale-105 stat-card">
+            <div class="flex h-full justify-center items-center flex-col">
+                <p class="stat-number">
+                    {{st.stat}}
+                </p>
+                <span class="stat-text">
+                    {{st.desc}}
+                </span>
+            </div>
         </div>
     </div>
+   
 </section>

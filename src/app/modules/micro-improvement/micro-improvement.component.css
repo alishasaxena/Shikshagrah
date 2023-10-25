@@ -11,7 +11,7 @@
   padding: 1.95rem 6.25rem;
 }
 .sqa-micro h1 {
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Happy Monkey;
   font-size: 1.75rem;
@@ -22,7 +22,7 @@
   margin-bottom: 0;
 }
 .sqa-micro p {
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Happy Monkey;
   font-size: 1.125rem;

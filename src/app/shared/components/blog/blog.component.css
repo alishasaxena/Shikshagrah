@@ -7,14 +7,14 @@
   align-items: flex-start;
   gap: 0.625rem;
   border-radius: 0.9375rem;
-  background-color: #d8d8d8;
+  background-color: var(--light-gray);
   /* opacity: 60%; */
-  border: 1px solid #ccc;
+  border: 1px solid var(--blog-color);
 }
 
 .date {
   font-size: 1.2rem;
-  color: #888;
+  color: var(--charcoal-gray);
   font-family: Happy Monkey;
 }
 
@@ -29,7 +29,7 @@
 .description {
   font-size: 1rem;
   overflow: scroll;
-  color: #888;
+  color: var(--charcoal-gray);
   font-weight: 400 !important;
   font-family: Happy Monkey;
 }

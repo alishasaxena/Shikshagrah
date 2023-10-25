@@ -58,3 +58,21 @@
 .list li:last-child {
   border: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .mini-header li {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .vidya-text-wrap {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .list li {
+    border: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+}
