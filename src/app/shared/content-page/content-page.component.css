@@ -83,6 +83,7 @@
 
 .list-steps span {
   display: flex;
+  flex-wrap: wrap;
   width: 3.125rem;
   height: 3.125rem;
   padding: 1.25rem 1.875rem;
@@ -110,4 +111,21 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .objective {
+    font-size: 1rem;
+  }
+
+  .description-content p {
+    font-size: 0.8rem;
+  }
+  .description-content span {
+    font-size: 0.9rem;
+  }
+  .tag {
+    font-size: 0.8rem !important;
+  }
 }

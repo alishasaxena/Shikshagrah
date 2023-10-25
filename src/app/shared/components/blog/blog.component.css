@@ -40,3 +40,16 @@
   gap: 0.3125rem;
   margin-top: auto;
 }
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .blog {
+    /* flex-direction: row; */
+    max-width: none;
+    width: 18.875rem;
+    height: 18.875rem;
+  }
+
+  .description {
+    overflow: auto;
+  }
+}
