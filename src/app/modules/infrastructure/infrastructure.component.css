@@ -14,12 +14,12 @@
   gap: 2.5rem;
   align-self: stretch;
   width: 100%;
-  padding: 0 6.74rem;
+  padding: 0 5.74rem;
   flex-wrap: wrap;
 }
 
 .search-bar {
-  width: 37.77rem;
+  width: 30rem;
 }
 
 .filter-buttons {
@@ -36,12 +36,11 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .blog-section {
-    grid-template-columns: 1fr 1fr;
-    padding: 4rem;
-  }
-
-  .search-bar {
-    width: 22rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.38rem;
+    padding: 5.81rem;
+    place-items: center;
   }
 }
 

@@ -51,5 +51,15 @@
   .hero-section {
     background-size: contain;
     border-bottom: none;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-section {
+    background-size: contain;
+    border-bottom: none;
+    /* height: 30rem; */
+    margin-bottom: 0;
   }
 }
