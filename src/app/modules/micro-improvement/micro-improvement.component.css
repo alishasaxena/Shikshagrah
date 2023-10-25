@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4.38rem;
+  gap: 3.5rem;
   justify-content: center;
-  padding: 4.38rem;
+  padding-top: 1.25rem;
   margin-top: 1.25rem;
 }
 .sqa-micro {
