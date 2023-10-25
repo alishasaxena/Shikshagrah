@@ -33,9 +33,9 @@
       </div>
     </div>
     <div class="filter-buttons flex">
-      <app-dropdown-checkbox [text]="'Sort by'"> </app-dropdown-checkbox>
-      <app-dropdown-checkbox [text]="'Filters'"></app-dropdown-checkbox>
-      <app-dropdown-checkbox [text]="'Role'"></app-dropdown-checkbox>
+      <app-dropdown-checkbox [text]="'Sort by'" [lists]="sortOptions"> </app-dropdown-checkbox>
+      <app-dropdown-checkbox [text]="'Filters'" [lists]="filter"></app-dropdown-checkbox>
+      <app-dropdown-checkbox [text]="'Role'" [lists]="role"></app-dropdown-checkbox>
     </div>
   </div>
 
