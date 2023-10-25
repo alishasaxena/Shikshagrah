@@ -4,3 +4,29 @@
   gap: 6.38rem;
   padding: 5.81rem;
 }
+.infra {
+  padding-top: 3.33rem;
+}
+.bar-options {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  align-self: stretch;
+  width: 100%;
+  padding: 0 6.74rem;
+}
+
+.search-bar {
+  width: 37.77rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 3.12rem;
+}
+
+/* temp */
+
+.infra {
+  background-color: black;
+}
