@@ -19,7 +19,7 @@
   </div>
 </div> -->
 
-<div class="relative">
+<div class="relative" #dropdownContainer>
   <button
     id="dropdownHelperButton"
     data-dropdown-toggle="dropdownHelper"
@@ -47,6 +47,7 @@
     *ngIf="isOpen"
     id="dropdownHelper"
     (click)="closeDropdown()"
+    (mouseleave)="closeDropdown()"
     class="z-10 dropdown-infra absolute"
   >
     <ul

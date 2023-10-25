@@ -9,11 +9,25 @@
 .mini-header li {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
+}
+
+.gov-text {
+  color: var(--header-text);
 }
 
 .mini-header li a {
-  color: var(--primary-color);
+  color: var(--header-text);
+  font-size: 0.8rem;
+}
+.mini-header li i {
+  font-size: 1rem;
+}
+.text-selected {
+  background-color: var(--header-text);
+  padding: 0 5px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .flag-img {
@@ -22,12 +36,14 @@
 }
 
 .ministry-logo img {
-  width: 2.5rem;
-  height: 2.5rem;
+  /* width: 3.3rem;
+  height: 3.3rem; */
 }
 
 .ministry-logo p {
   font-size: 0.6rem;
+  letter-spacing: normal;
+  color: var(--charcoal-gray);
   margin-bottom: -0.5rem;
 }
 .ministry-logo span {
@@ -37,7 +53,7 @@
 
 .vidya-text {
   color: var(--accent-color);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -46,9 +62,10 @@
 }
 .left-nav p {
   margin-bottom: -0.2rem;
+  font-weight: 600;
 }
 .left-nav span {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .list li {

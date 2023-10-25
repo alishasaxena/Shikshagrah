@@ -3,7 +3,7 @@
 <a class="blog cursor-pointer" (click)="onBlogItemClickHandler()">
   <div class="date">{{ date }}</div>
   <div class="title">{{ title }}</div>
-  <div class="description">{{ description }}</div>
+  <div class="description">{{ description.split(' ').slice(0,12).join(' ')}} ...</div>
   <div class="tags">
     <ng-container *ngFor="let tag of tags">
       <span class="tag">{{ tag }}</span>

@@ -27,7 +27,9 @@ export const stats: Stats[] = [
     desc: 'Unique MI Projects',
   },
   {
-    stat: ' 5.98L+',
+    stat: ' 5',
+    decimalData: '.98L',
+    sign: '+',
     desc: 'Total number of micro-improvements',
   }
 ]
@@ -99,25 +101,25 @@ export const blogsData: Blog[] = [
   },
   {
     title: 'To improve the resources available in the school',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'The HM understands the importance of having good school resources.',
     tags: ['HM'],
     date: '4 weeks'
   },
   {
     title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: '',
     tags: ['Teachers', 'Education'],
     date: '4 weeks'
   },
   {
     title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'HTs takes a walk around school to ensure that the difference spaces in the school',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
   {
     title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'Building as a Learning Aid , or BaLA - create a plan to develop',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
@@ -161,7 +163,7 @@ export const exposureVisit: ExposureVisit[] = [
   }
 ];
 
-export const sortOptions : string[] =  [
+export const  filterOptions: string[] =  [
   "Physical Infrastructure",
     "Provision of Food (MDM, Canteen)",
     "Safety Provision",
@@ -171,13 +173,13 @@ export const sortOptions : string[] =  [
     "Safety (Physical and Psychological)"
 ]
 
-export const filterOptions: string[] = [
+export const sortOptions: string[] = [
+    "A-Z",
+    "Z-A",
     "Recently Uploaded",
     "Most Downloads",
     "For Teachers",
     "For HT/Officials",
-    "Z-A",
-    "A-Z"
 ]
 
 export const roleOptions : string[] =  [
@@ -208,6 +210,8 @@ interface Card {
 interface Stats {
   stat: string;
   desc: string;
+  decimalData?: string;
+  sign?: string;
 }
 
 interface HeroSection {
@@ -226,7 +230,7 @@ interface CardDetail {
 
 interface Blog {
   title: string;
-  description: string;
+  description: any;
   date: string;
   tags: any;
 }

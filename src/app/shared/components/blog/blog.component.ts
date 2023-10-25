@@ -10,7 +10,7 @@ import { AppServiceService } from 'src/app/services/app-service.service';
 export class BlogComponent {
   @Input() date: string = '';
   @Input() title: string = '';
-  @Input() description: string = '';
+  @Input() description: any = '';
   @Input() tags: string[] = [];
   @Input() index: number = 0;
 
@@ -23,4 +23,7 @@ export class BlogComponent {
     }, 0);
     this.router.navigate(['/blog', blogTitle]);
   }
+
+ 
+  
 }
