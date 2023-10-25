@@ -10,7 +10,7 @@ import { navigationLinks } from 'src/app/data/sample.data';
 })
 export class HeaderComponent implements OnInit {
   navLinks: any;
-  isHomePage: boolean = true;
+  isHomePage: boolean = false;
 
 
   constructor(private dataService: DataService, private router: Router) { }

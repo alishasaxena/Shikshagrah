@@ -60,12 +60,15 @@
 }
 
 .back-nav {
-  height: 4rem;
+  height: 3.5rem;
   background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
 .back-nav svg {
-  width: 1.98044rem;
-  height: 1.82813rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 @media only screen and (max-width: 600px) {
   .mini-header li {
