@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 export class HeaderComponent implements OnInit {
   navLinks: any;
   isHomePage: boolean = false;
-
+  isContentPage: boolean = false;
 
   constructor(private dataService: DataService, private router: Router, private location: Location) { }
   ngOnInit(): void {
@@ -25,12 +25,18 @@ export class HeaderComponent implements OnInit {
   }
 
   headerupdate(event: any) {
+    const url = 'blog/:title'.split('/');
     if (event.url !== "/") {
       this.isHomePage = false
+    } else if(event.url === url[0]  ){
+      this.isContentPage = true
     } else {
       this.isHomePage = true
     }
+    console.log(url[0], 'vjgvj')
+
   }
+
   goBack() {
     this.location.back();
   }

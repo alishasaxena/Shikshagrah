@@ -65,10 +65,35 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  /* justify-content: space-between; */
 }
 .back-nav svg {
   width: 1.7rem;
   height: 1.7rem;
+}
+
+.arr svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.dwn-btn {
+  display: flex;
+  padding: 0.625rem 1.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6875rem;
+  border-radius: 6.25rem;
+  background: var(--text-color);
+  color: var(--white-color);
+  text-align: center;
+  font-family: Happy Monkey;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   .mini-header li {
