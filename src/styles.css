@@ -8,6 +8,32 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.micro-parent {
+  background-image: url(assets/images/bg.png);
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  font-family: "Happy Monkey", sans-serif;
+}
+.micro-title {
+  color: var(--white-color);
+  text-align: center;
+  font-family: Happy Monkey;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+}
+.micro-desc {
+  color: var(--white-color);
+  text-align: center;
+  font-family: Happy Monkey;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   body {
@@ -21,8 +47,32 @@ body {
   --accent-color: #ff603f;
   --normal-gray: #f2f3f3;
   --text-color: #3d4a7d;
+  --white-color: #fff;
+  --charcoal-gray: #888;
+  --blog-color: #ccc;
+  --tag-color: #edde5d;
+  --light-gray: #d8d8d8;
+  --header-text: #01455d;
+  --hero-border: #fea71f;
 }
 
 .text-primary {
   color: var(--primary-color);
+}
+
+.tag {
+  padding: 0.2rem 0.5rem;
+  color: #252b42 !important;
+  font-family: Happy Monkey;
+  font-size: 1rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+  border-radius: 3.125rem;
+  background: var(--tag-color);
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

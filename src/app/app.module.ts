@@ -10,6 +10,9 @@ import { MicroImprovementComponent } from './modules/micro-improvement/micro-imp
 import { AppRoutingModule } from './app-routing.module';
 import { InfrastructureComponent } from './modules/infrastructure/infrastructure.component';
 import { ContentPageComponent } from './shared/content-page/content-page.component';
+import { DropdownCheckboxComponent } from './shared/dropdown-checkbox/dropdown-checkbox.component';
+import { ExplorePageComponent } from './modules/explore-page/explore-page.component';
+import { SingleBlogContentComponent } from './modules/single-blog-content/single-blog-content.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { ContentPageComponent } from './shared/content-page/content-page.compone
     BlogComponent,
     MicroImprovementComponent,
     InfrastructureComponent,
-    ContentPageComponent
+    ContentPageComponent,
+    DropdownCheckboxComponent,
+    ExplorePageComponent,
+    SingleBlogContentComponent
   ],
   imports: [
     BrowserModule,

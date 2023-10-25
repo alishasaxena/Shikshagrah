@@ -1,0 +1,29 @@
+.main-micro {
+  /* margin: 0 auto;
+    text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* width: 50%; */
+  /* height: 50%; */
+}
+.explore-btn {
+  background-color: var(--white-color);
+  display: flex;
+  padding: 1.25rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Happy Monkey;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.01963rem;
+}

@@ -4,7 +4,7 @@ export const navigationLinks: { label: string; route: string }[] = [
   { label: 'Home', route: '/' },
   { label: 'Approach', route: '/approach' },
   { label: 'Mahotsav', route: '/mahotsav' },
-  { label: 'Micro-Improvement Pitaara', route: '/micro-improvement' },
+  { label: 'Micro-Improvement Pitaara', route: '/explore' },
 ];
 
 export const heroData: HeroSection = {
@@ -27,7 +27,9 @@ export const stats: Stats[] = [
     desc: 'Unique MI Projects',
   },
   {
-    stat:' 5.98L+', 
+    stat: ' 5',
+    decimalData: '.98L',
+    sign: '+',
     desc: 'Total number of micro-improvements',
   }
 ]
@@ -99,25 +101,25 @@ export const blogsData: Blog[] = [
   },
   {
     title: 'To improve the resources available in the school',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'The HM understands the importance of having good school resources.',
     tags: ['HM'],
     date: '4 weeks'
   },
   {
     title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: '',
     tags: ['Teachers', 'Education'],
     date: '4 weeks'
   },
   {
     title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'HTs takes a walk around school to ensure that the difference spaces in the school',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
   {
     title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    description: 'Building as a Learning Aid , or BaLA - create a plan to develop',
     tags: ['HT And Officials'],
     date: '4 weeks'
   },
@@ -125,33 +127,78 @@ export const blogsData: Blog[] = [
 ];
 
 
-const exposureVisit: ExposureVisit = {
-  objective: "To conduct an exposure visit for parents and students to local primary schools.",
-  description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
-  recommendedDuration: "4 Weeks",
-  sqaaDomain: "Curriculum, Pedagogy Assessment",
-  subDomain: "Access",
-  stepsTaken: [
-    { stepNumber: 1, description: "Identify the local primary school to visit for exposure." },
-    { stepNumber: 2, description: "Connect with local primary school HM to schedule an exposure visit." },
-    { stepNumber: 3, description: "Inform parents about the primary school and exposure visit to school." },
-    { stepNumber: 4, description: "Plan the visit to the primary school." },
-    { stepNumber: 5, description: "Plan an interactive session with the primary school HM, teacher, and students." },
-    { stepNumber: 6, description: "Take feedback from the parents on the visit." }
-  ]
-};
+export const exposureVisit: ExposureVisit[] = [
+  {
+    objective: "To conduct an exposure visit for parents and students to local primary schools.",
+    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begins.",
+    recommendedFor: ['HM & Teachers', 'SMC'],
+    recommendedDuration: "4 Weeks",
+    sqaaDomain: "Curriculum, Pedagogy Assessment",
+    subDomain: "Access",
+    stepsTaken: [
+      "Identify the local primary school to visit for exposure.",
+      "Connect with local primary school HM to schedule an exposure visit.",
+      "Inform parents about the primary school and exposure visit to school.",
+      "Plan the visit to the primary school.",
+      "Plan an interactive session with the primary school HM, teacher, and students.",
+      "Take feedback from the parents on the visit."
+    ]
+  },
+
+  {
+    objective: "Heyyy an exposure visit for parents and students to local primary schools.",
+    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
+    recommendedFor: ['HM & Teachers', 'SMC'],
+    recommendedDuration: "4 Weeks",
+    sqaaDomain: "Curriculum, Pedagogy Assessment",
+    subDomain: "Access",
+    stepsTaken: [
+      "Identify the local primary school to visit for exposure.",
+      "Connect with local primary school HM to schedule an exposure visit.",
+      "Inform parents about the primary school and exposure visit to school.",
+      "Plan the visit to the primary school.",
+      "Plan an interactive session with the primary school HM, teacher, and students.",
+      "Take feedback from the parents on the visit."
+    ]
+  }
+];
+
+export const  filterOptions: string[] =  [
+    "Physical Infrastructure",
+    "Provision of Food (MDM, Canteen)",
+    "Safety Provision",
+    "Access (Enrolment Tracker, Dropout, UDISE)",
+    "Sports & Playground",
+    "Sanitation (Health and Hygiene)",
+    "Safety (Physical and Psychological)"
+]
+
+export const sortOptions: string[] = [
+    "A-Z",
+    "Z-A",
+    "Recently Uploaded",
+    "Most Downloads",
+    "For Teachers",
+    "For HT/Officials",
+]
+
+export const roleOptions : string[] =  [
+    "Teachers",
+    "HM (Headmaster)",
+    "SMC (School Management Committee)",
+    "Education Leader",
+    "Panchayat"
+]
 export interface ExposureVisit {
   objective: string;
   description: string;
+  recommendedFor: any;
   recommendedDuration: string;
   sqaaDomain: string;
   subDomain: string;
-  stepsTaken: ExposureVisitStep[];
+  stepsTaken: any;
 }
-export interface ExposureVisitStep {
-  stepNumber: number;
-  description: string;
-}
+
 interface Card {
   title: string;
   description: string;
@@ -163,6 +210,8 @@ interface Card {
 interface Stats {
   stat: string;
   desc: string;
+  decimalData?: string;
+  sign?: string;
 }
 
 interface HeroSection {
@@ -181,7 +230,7 @@ interface CardDetail {
 
 interface Blog {
   title: string;
-  description: string;
+  description: any;
   date: string;
   tags: any;
 }

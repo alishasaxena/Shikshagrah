@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content-page',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-page.component.css']
 })
 export class ContentPageComponent {
-
+  @Input() objective!: string;
+  @Input() description!: string;
+  @Input() recommendedFor!: any;
+  @Input() recommendedDuration!: string;
+  @Input() sqaaDomain!: string;
+  @Input() subDomain!: string;
+  @Input() stepsTaken!: any;
 }

@@ -1,0 +1,63 @@
+
+<div class="relative" #dropdownContainer>
+  <button
+    id="dropdownHelperButton"
+    data-dropdown-toggle="dropdownHelper"
+    class="sort"
+    type="button"
+    (click)="toggleDropdown()"
+  >
+    {{ text }}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+    >
+      <path
+        d="M5.26212 9.48145L11.8143 17.1277C11.9199 17.2509 12.0509 17.3498 12.1983 17.4176C12.3458 17.4853 12.5061 17.5204 12.6684 17.5204C12.8306 17.5204 12.991 17.4853 13.1384 17.4176C13.2858 17.3498 13.4168 17.2509 13.5224 17.1277L20.0746 9.48145C20.6999 8.75161 20.1815 7.62427 19.2206 7.62427H6.11431C5.15337 7.62427 4.63493 8.75161 5.26212 9.48145Z"
+        fill="var(--text-color)"
+      />
+    </svg>
+  </button>
+
+  <!-- Dropdown menu -->
+  <div
+    *ngIf="isOpen"
+    id="dropdownHelper"
+    (mouseleave)="closeDropdown()"
+    class="z-10 dropdown-infra absolute"
+  >
+    <ul
+      class="space-y-1 text-sm text-gray-700 dark:text-gray-200"
+      aria-labelledby="dropdownHelperButton"
+    >
+      <li *ngFor="let list of lists; let i = index">
+        <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+        <div class="inline-flex items-center">
+          <label class="relative flex cursor-pointer items-center rounded-full" for="checkbox" data-ripple-dark="true">
+            <input type="checkbox"
+              class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity  checked:bg-blue-900 checked:before:bg-white hover:before:opacity-10"
+              id="checkbox"  />
+            <div
+              class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                stroke="currentColor" strokeWidth="1">
+                <path fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+            </div>
+          </label>
+        </div>
+          <div class="ml-2 text-sm">
+            <label [for]="'helper-checkbox-' + i" class="font-medium text-gray-900 dark:text-gray-300">
+              <div class="text-infra">{{ list }}</div>
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
