@@ -14,9 +14,9 @@ export class CardComponent {
   @Input() link!: string;
   @Input() buttonText!: string;
   @Input() buttonLink!: string;
-  active: boolean = false; 
+  active: boolean = false;
 
-    onCardHover() {
+  onCardHover() {
     this.active = true;
   }
 
