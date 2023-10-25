@@ -95,20 +95,32 @@
   letter-spacing: 0.01963rem;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 600px) {
-  .mini-header li {
-    flex-direction: column;
-    gap: 0.5rem;
+
+@media only screen and (max-width: 700px) {
+  .mini-header {
+    display: none;
   }
 
   .vidya-text-wrap {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto;
+  }
+
+  .ministery {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-nav {
+    display: none;
   }
 
   .list li {
     border: none;
     padding: 0;
     margin-bottom: 0.5rem;
+  }
+  .ministry-logo {
+    justify-content: center;
+    margin: 0 auto;
   }
 }

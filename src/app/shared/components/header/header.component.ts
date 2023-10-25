@@ -28,13 +28,14 @@ export class HeaderComponent implements OnInit {
     const url = 'blog/:title'.split('/');
     if (event.url !== "/") {
       this.isHomePage = false
-    } else if(event.url === url[0]  ){
+    } else if(event.url.toLowerCase().includes(url[0])){
       this.isContentPage = true
     } else {
       this.isHomePage = true
     }
-    console.log(url[0], 'vjgvj')
 
+    
+    console.log(this.isContentPage, 'vjgvj')
   }
 
   goBack() {

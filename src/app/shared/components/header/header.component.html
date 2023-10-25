@@ -1,5 +1,5 @@
 <header *ngIf="isHomePage">
-  <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
+  <div class="h-9 mini-header px-12 py-3 flex items-center justify-between ">
     <a class="flex items-center flex-wrap gap-2">
       <img src="assets/images/india-flag-icon.svg" class="flag-img" />
       <a class="text-xs">Government of India</a>
@@ -22,7 +22,7 @@
       </ul>
     </div>
   </div>
-  <div class="flex items-center justify-between px-10 py-3">
+  <div class="flex items-center justify-between px-10 py-3 ministery">
     <div class="ministry-logo flex items-center gap-2">
       <img class="" src="assets/images/satya.png" />
       <div>
@@ -42,16 +42,17 @@
       </div>
     </div>
   </div>
-  <nav class="h-12 p-3 nav px-8">
-    <ul class="flex gap-3 flex-wrap items-center">
-      <li class="px-4" *ngFor="let link of navLinks">
-        <a class="text-sm text-white" [routerLink]="link.route">{{
-          link.label
-        }}</a>
-      </li>
-    </ul>
-  </nav>
+ 
+<nav class="sm:h-12 sm:p-3 nav px-8">
+  <ul class="flex gap-3 flex-wrap items-center">
+    <li class="px-4" *ngFor="let link of navLinks">
+      <a class="text-sm text-white" [routerLink]="link.route">{{ link.label }}</a>
+    </li>
+  </ul>
+</nav>
+
 </header>
+
 <header class="back-nav cursor-pointer" *ngIf="!isHomePage">
   <div (click)="goBack()">
     <svg

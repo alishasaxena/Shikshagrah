@@ -162,6 +162,7 @@ export const exposureVisit: ExposureVisit[] = [
 ];
 
 export const sortOptions : string[] =  [
+  "Physical Infrastructure",
     "Provision of Food (MDM, Canteen)",
     "Safety Provision",
     "Access (Enrolment Tracker, Dropout, UDISE)",
