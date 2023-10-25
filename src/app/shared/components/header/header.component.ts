@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
+import { Router, NavigationEnd } from '@angular/router';
 import { navigationLinks } from 'src/app/data/sample.data';
 
 @Component({
@@ -12,12 +13,21 @@ export class HeaderComponent implements OnInit {
   isHomePage: boolean = true;
 
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private router: Router) { }
   ngOnInit(): void {
     this.navLinks = navigationLinks;
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.headerupdate(event);
+      }
+    });
   }
 
- headerupdate() {
-   this.isHomePage = !this.isHomePage
- }
+  headerupdate(event: any) {
+    if (event.url !== "/") {
+      this.isHomePage = false
+    } else {
+      this.isHomePage = true
+    }
+  }
 }
