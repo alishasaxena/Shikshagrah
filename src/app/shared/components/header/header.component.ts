@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   navLinks: any;
   isHomePage: boolean = false;
   isContentPage: boolean = false;
+  showInfraHead = false;
 
   constructor(private dataService: DataService, private router: Router, private location: Location) { }
   ngOnInit(): void {
@@ -25,16 +26,23 @@ export class HeaderComponent implements OnInit {
   }
 
   headerupdate(event: any) {
-    const url = 'blog/:title'.split('/');
+    console.log(event, "event")
     if (event.url !== "/") {
       this.isHomePage = false
-    } else if(event.url === url[0]  ){
-      this.isContentPage = true
     } else {
       this.isHomePage = true
     }
-    console.log(url[0], 'vjgvj')
 
+    if (event.url.split('/')[1] === "infrastructure") {
+      this.showInfraHead = true
+    } else {
+      this.showInfraHead = false
+    }
+    if (event.url.split('/')[1] === 'blog') {
+      this.isContentPage = true
+    } else {
+      this.isContentPage = false
+    }
   }
 
   goBack() {
