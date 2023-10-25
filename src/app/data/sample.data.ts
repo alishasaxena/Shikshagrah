@@ -125,22 +125,41 @@ export const blogsData: Blog[] = [
 ];
 
 
-export const exposureVisit: ExposureVisit = {
-  objective: "To conduct an exposure visit for parents and students to local primary schools.",
-  description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
-  recommendedFor: ['HM & Teachers', 'SMC'],
-  recommendedDuration: "4 Weeks",
-  sqaaDomain: "Curriculum, Pedagogy Assessment",
-  subDomain: "Access",
-  stepsTaken: [
-    "Identify the local primary school to visit for exposure.",
-    "Connect with local primary school HM to schedule an exposure visit.",
-    "Inform parents about the primary school and exposure visit to school.",
-    "Plan the visit to the primary school.",
-    "Plan an interactive session with the primary school HM, teacher, and students.",
-    "Take feedback from the parents on the visit."
-  ]
-};
+export const exposureVisit: ExposureVisit[] = [
+  {
+    objective: "To conduct an exposure visit for parents and students to local primary schools.",
+    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
+    recommendedFor: ['HM & Teachers', 'SMC'],
+    recommendedDuration: "4 Weeks",
+    sqaaDomain: "Curriculum, Pedagogy Assessment",
+    subDomain: "Access",
+    stepsTaken: [
+      "Identify the local primary school to visit for exposure.",
+      "Connect with local primary school HM to schedule an exposure visit.",
+      "Inform parents about the primary school and exposure visit to school.",
+      "Plan the visit to the primary school.",
+      "Plan an interactive session with the primary school HM, teacher, and students.",
+      "Take feedback from the parents on the visit."
+    ]
+  },
+
+  {
+    objective: "Heyyy an exposure visit for parents and students to local primary schools.",
+    description: "This event may be organized in the village or community a few months before enrollment into Std I and once again at the time when Std I classes begin.",
+    recommendedFor: ['HM & Teachers', 'SMC'],
+    recommendedDuration: "4 Weeks",
+    sqaaDomain: "Curriculum, Pedagogy Assessment",
+    subDomain: "Access",
+    stepsTaken: [
+      "Identify the local primary school to visit for exposure.",
+      "Connect with local primary school HM to schedule an exposure visit.",
+      "Inform parents about the primary school and exposure visit to school.",
+      "Plan the visit to the primary school.",
+      "Plan an interactive session with the primary school HM, teacher, and students.",
+      "Take feedback from the parents on the visit."
+    ]
+  }
+];
 export interface ExposureVisit {
   objective: string;
   description: string;

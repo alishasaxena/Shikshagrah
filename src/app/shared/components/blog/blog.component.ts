@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppServiceService } from 'src/app/services/app-service.service';
 
 @Component({
   selector: 'app-blog',
@@ -11,11 +12,15 @@ export class BlogComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() tags: string[] = [];
+  @Input() index: number = 0;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public _as: AppServiceService,) { }
 
   onBlogItemClickHandler() {
     const blogTitle = this.title.replaceAll(" ", "-")
+    setTimeout(() => {
+      this._as.shareBlogData(this.index)
+    }, 0);
     this.router.navigate(['/blog', blogTitle]);
   }
 }

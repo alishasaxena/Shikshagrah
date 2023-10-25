@@ -40,12 +40,13 @@
   </div>
 
   <div class="blog-section">
-    <div *ngFor="let blog of blogs">
+    <div *ngFor="let blog of blogs; let idx = index">
       <app-blog
         [date]="blog.date"
         [title]="blog.title"
         [description]="blog.description"
         [tags]="blog.tags"
+        [index]="idx"
       ></app-blog>
     </div>
   </div>
