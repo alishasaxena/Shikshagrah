@@ -9,9 +9,15 @@ import { navigationLinks } from 'src/app/data/sample.data';
 })
 export class HeaderComponent implements OnInit {
   navLinks: any;
+  isHomePage: boolean = true;
+
 
   constructor(private dataService: DataService) {}
   ngOnInit(): void {
     this.navLinks = navigationLinks;
   }
+
+ headerupdate() {
+   this.isHomePage = !this.isHomePage
+ }
 }

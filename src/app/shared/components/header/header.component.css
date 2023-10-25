@@ -59,6 +59,14 @@
   border: none;
 }
 
+.back-nav {
+  height: 4rem;
+  background-color: var(--white-color);
+}
+.back-nav svg {
+  width: 1.98044rem;
+  height: 1.82813rem;
+}
 @media only screen and (max-width: 600px) {
   .mini-header li {
     flex-direction: column;

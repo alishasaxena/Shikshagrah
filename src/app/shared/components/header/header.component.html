@@ -1,5 +1,5 @@
 
-<header>
+<header *ngIf="isHomePage">
     <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
         <a class="flex items-center flex-wrap gap-2">
             <img src='assets/images/india-flag-icon.svg' class="flag-img"/>
@@ -51,4 +51,12 @@
             </li>
         </ul>
     </nav>
+</header>
+<header class="back-nav" *ngIf="!isHomePage">
+    <div >
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="33" viewBox="0 0 35 33" fill="none">
+            <path d="M16.625 31.25L2 16.625L16.625 2M4.03125 16.625H33.6875" stroke="#3D4A7D" stroke-width="2.25"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
 </header>
