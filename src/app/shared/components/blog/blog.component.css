@@ -1,3 +1,9 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
 .blog {
   display: flex;
   width: 21.875rem;
@@ -11,7 +17,6 @@
   /* opacity: 60%; */
   border: 1px solid var(--blog-color);
 }
-
 .date {
   font-size: 1.2rem;
   color: var(--charcoal-gray);
