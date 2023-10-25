@@ -4,7 +4,7 @@ export const navigationLinks: { label: string; route: string }[] = [
   { label: 'Home', route: '/' },
   { label: 'Approach', route: '/approach' },
   { label: 'Mahotsav', route: '/mahotsav' },
-  { label: 'Micro-Improvement Pitaara', route: '/micro-improvement' },
+  { label: 'Micro-Improvement Pitaara', route: '/explore' },
 ];
 
 export const heroData: HeroSection = {
@@ -27,7 +27,7 @@ export const stats: Stats[] = [
     desc: 'Unique MI Projects',
   },
   {
-    stat:' 5.98L+', 
+    stat: ' 5.98L+',
     desc: 'Total number of micro-improvements',
   }
 ]
@@ -133,12 +133,12 @@ export const exposureVisit: ExposureVisit = {
   sqaaDomain: "Curriculum, Pedagogy Assessment",
   subDomain: "Access",
   stepsTaken: [
-    "Identify the local primary school to visit for exposure." ,
+    "Identify the local primary school to visit for exposure.",
     "Connect with local primary school HM to schedule an exposure visit.",
     "Inform parents about the primary school and exposure visit to school.",
     "Plan the visit to the primary school.",
-   "Plan an interactive session with the primary school HM, teacher, and students.",
-   "Take feedback from the parents on the visit."
+    "Plan an interactive session with the primary school HM, teacher, and students.",
+    "Take feedback from the parents on the visit."
   ]
 };
 export interface ExposureVisit {

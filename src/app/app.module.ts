@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { InfrastructureComponent } from './modules/infrastructure/infrastructure.component';
 import { ContentPageComponent } from './shared/content-page/content-page.component';
 import { DropdownCheckboxComponent } from './shared/dropdown-checkbox/dropdown-checkbox.component';
+import { ExplorePageComponent } from './modules/explore-page/explore-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DropdownCheckboxComponent } from './shared/dropdown-checkbox/dropdown-c
     MicroImprovementComponent,
     InfrastructureComponent,
     ContentPageComponent,
-    DropdownCheckboxComponent
+    DropdownCheckboxComponent,
+    ExplorePageComponent
   ],
   imports: [
     BrowserModule,
