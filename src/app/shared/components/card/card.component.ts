@@ -14,6 +14,7 @@ export class CardComponent {
   @Input() link!: string;
   @Input() buttonText!: string;
   @Input() buttonLink!: string;
+  @Input() blogData: any;
   active: boolean = false;
 
   onCardHover() {
