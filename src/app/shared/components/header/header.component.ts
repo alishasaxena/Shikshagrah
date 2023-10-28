@@ -3,6 +3,7 @@ import { DataService } from 'src/app/data.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { navigationLinks } from 'src/app/data/sample.data';
 import { Location } from '@angular/common';
+import { AppServiceService } from 'src/app/services/app-service.service';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
   isContentPage: boolean = false;
   showInfraHead = false;
 
-  constructor(private dataService: DataService, private router: Router, private location: Location) { }
+  constructor(private dataService: DataService, private router: Router, private location: Location, public _as: AppServiceService) { }
   ngOnInit(): void {
     this.navLinks = navigationLinks;
     this.router.events.subscribe((event: any) => {
@@ -47,6 +48,10 @@ export class HeaderComponent implements OnInit {
 
   goBack() {
     this.location.back();
+  }
+
+  prevNextClickHandler(eventType: string) {
+    this._as.onPrevNextClick.emit(eventType)
   }
 
 }

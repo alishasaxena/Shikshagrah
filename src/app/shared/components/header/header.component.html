@@ -1,5 +1,5 @@
 <header *ngIf="isHomePage">
-  <div class="h-9 mini-header px-12 py-3 flex items-center justify-between ">
+  <div class="h-9 mini-header px-12 py-3 flex items-center justify-between">
     <a class="flex items-center flex-wrap gap-2">
       <img src="assets/images/india-flag-icon.png" class="flag-img" />
       <a class="text-sm gov-text">Government of India</a>
@@ -7,7 +7,9 @@
     <div>
       <ul class="flex items-center flex-wrap gap-2 text-xs list">
         <li>
-          <i class="material-icons icon-gradient-blue me-1 align-middle"> important_devices </i>
+          <i class="material-icons icon-gradient-blue me-1 align-middle">
+            important_devices
+          </i>
           <a>Main Content</a>
         </li>
         <li class="flex items-center gap-4">
@@ -16,7 +18,9 @@
           <a>A-</a>
         </li>
         <li>
-          <i class="material-icons icon-gradient-blue me-1 align-middle"> chrome_reader_mode </i>
+          <i class="material-icons icon-gradient-blue me-1 align-middle">
+            chrome_reader_mode
+          </i>
           <a>Screen Reader</a>
         </li>
       </ul>
@@ -24,7 +28,7 @@
   </div>
   <div class="flex items-center justify-between px-10 py-2 ministery">
     <div class="ministry-logo flex items-center gap-2">
-      <img src="assets/images/gov.png"/>
+      <img src="assets/images/gov.png" />
     </div>
     <div class="flex items-center gap-4">
       <div class="vidya-text-wrap">
@@ -38,15 +42,16 @@
       </div>
     </div>
   </div>
- 
-<nav class="sm:h-12 sm:p-3 nav px-8">
-  <ul class="flex gap-3 flex-wrap items-center">
-    <li class="px-4" *ngFor="let link of navLinks">
-      <a class="text-sm text-white" [routerLink]="link.route">{{ link.label }}</a>
-    </li>
-  </ul>
-</nav>
 
+  <nav class="sm:h-12 sm:p-3 nav px-8">
+    <ul class="flex gap-3 flex-wrap items-center">
+      <li class="px-4" *ngFor="let link of navLinks">
+        <a class="text-sm text-white" [routerLink]="link.route">{{
+          link.label
+        }}</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <header *ngIf="!isHomePage">
   <div class="back-nav cursor-pointer">
@@ -72,36 +77,40 @@
 
     <div class="flex items-center w-full ml-9 flex-wrap" *ngIf="isContentPage">
       <div class="flex gap-6 justify-center arr m-auto">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="52"
-          height="53"
-          viewBox="0 0 52 53"
-          fill="none"
-        >
-          <path
-            d="M24.7812 41.1294L10.1562 26.5044L24.7812 11.8794"
-            stroke="#004590"
-            stroke-width="2.25"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="52"
-          height="53"
-          viewBox="0 0 52 53"
-          fill="none"
-        >
-          <path
-            d="M27.2188 11.8706L41.8438 26.4956L27.2188 41.1206"
-            stroke="#004590"
-            stroke-width="2.25"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <div (click)="prevNextClickHandler('prev')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="52"
+            height="53"
+            viewBox="0 0 52 53"
+            fill="none"
+          >
+            <path
+              d="M24.7812 41.1294L10.1562 26.5044L24.7812 11.8794"
+              stroke="#004590"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div (click)="prevNextClickHandler('next')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="52"
+            height="53"
+            viewBox="0 0 52 53"
+            fill="none"
+          >
+            <path
+              d="M27.2188 11.8706L41.8438 26.4956L27.2188 41.1206"
+              stroke="#004590"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </div>
       <div>
         <button class="dwn-btn">
@@ -127,5 +136,3 @@
     </div>
   </div>
 </header>
-
-

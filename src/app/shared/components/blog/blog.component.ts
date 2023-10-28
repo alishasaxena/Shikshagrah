@@ -13,17 +13,17 @@ export class BlogComponent {
   @Input() description: any = '';
   @Input() tags: string[] = [];
   @Input() index: number = 0;
+  @Input() blogData: any;
 
   constructor(private router: Router, public _as: AppServiceService,) { }
 
   onBlogItemClickHandler() {
     const blogTitle = this.title.replaceAll(" ", "-")
     setTimeout(() => {
-      this._as.shareBlogData(this.index)
+      // this._as.shareBlogData(this.index)
+      console.log(this.index, "this.index")
+      this._as.shareBlogData(this.blogData, this.index)
     }, 0);
     this.router.navigate(['/blog', blogTitle]);
   }
-
- 
-  
 }

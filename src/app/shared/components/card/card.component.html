@@ -1,19 +1,24 @@
 <!-- card.component.html -->
 
-<div class="card" (mouseenter)="onCardHover()" (mouseleave)="onCardLeave()">
-  <a [routerLink]="link">
+<div
+  class="card"
+  (click)="onCardClickHandler()"
+  (mouseenter)="onCardHover()"
+  (mouseleave)="onCardLeave()"
+>
+  <a class="cursor-pointer">
     <img class="rounded-t-lg" [src]="imageSrc" alt="" />
   </a>
   <div class="">
-    <a [routerLink]="link" class="card-title cursor-pointer">
+    <a class="card-title cursor-pointer">
       {{ title }}
     </a>
     <div *ngIf="active" class="flex flex-col gap-4">
-      <a [routerLink]="link">
+      <a>
         <p class="card-description">{{ description }}</p>
       </a>
       <!-- button -->
-      <a [routerLink]="link" class="view-projects-btn"> View Projects </a>
+      <a class="view-projects-btn cursor-pointer"> View Projects </a>
     </div>
   </div>
 </div>

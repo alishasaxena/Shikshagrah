@@ -43,12 +43,59 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-      description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-      tags: ['HM & Teachers ', 'SMC'],
-      date: '4 weeks'
+        title: 'School resources',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          "Assess the current resources and infrastructure available in the school",
+          "Detail the needs of the school",
+          "Identify resources that the community can support with",
+          "List the requirements which needs to be procured",
+          "Share the list with the CRP",
+        ]
+      },
+      {
+        title: 'Bringing back the dropouts',
+        description: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
+        tags: ['HT'],
+        date: '1 month',
+        objective: 'To engage teachers and SMC members to create a plan to bring back students who have dropped out to school.',
+        sqaDomain: 'Infrastructure',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Create a consolidated list of students who have dropped out of school',
+          'Organise a meeting with teachers and SMC members',
+          'Identify the reasons for dropouts',
+          'Identify strategies to bring dropout students back into the school system',
+          'Create an action plan',
+          'Assign tasks to members at the meeting based on strategies',
+          'Implement the strategies',
+          'Conduct a follow-up session for updates and challenges',
+          'Document the learnings, challenges, experiences'
+        ],
+      },
+      {
+        title: 'School Exposure Visit',
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HT', 'SMC'],
+        date: '2 weeks',
+        objective: 'To conduct an exposure visit for parents and students to local primary schools.',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Identify the local primary school to visit for exposure',
+          'Connect with the local primary school HM to schedule an exposure visit',
+          'Inform parents about the primary school and exposure visit to school',
+          'Plan the visit to the primary school',
+          'Plan an interactive session with the primary school HM, teacher, and students',
+          'Take feedback from parents on the visit'
+        ]
       }
-      ]
+    ]
   },
   {
     title: 'curriculum, Pedagogy Assessment ',
@@ -56,12 +103,12 @@ export const cardsData: Card[] = [
     image: 'assets/images/micro-improve/m3.png',
     buttonLabel: 'Explore',
     route: '/infrastructure',
-     blogs: [
+    blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
   },
@@ -71,12 +118,12 @@ export const cardsData: Card[] = [
     image: 'assets/images/micro-improve/m4.png',
     buttonLabel: 'Read More',
     route: '/infrastructure',
-     blogs: [
+    blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
   },
@@ -86,12 +133,12 @@ export const cardsData: Card[] = [
     image: 'assets/images/micro-improve/m5.png',
     buttonLabel: 'Discover',
     route: '/infrastructure',
-     blogs: [
+    blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
   },
@@ -101,12 +148,12 @@ export const cardsData: Card[] = [
     image: 'assets/images/micro-improve/m6.png',
     buttonLabel: 'Get Started',
     route: '/infrastructure',
-     blogs: [
+    blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-      description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-      tags: ['HM & Teachers ', 'SMC'],
-      date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
   },
@@ -116,12 +163,12 @@ export const cardsData: Card[] = [
     image: 'assets/images/micro-improve/m7.png',
     buttonLabel: 'View Details',
     route: '/infrastructure',
-     blogs: [
+    blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
   },
@@ -134,9 +181,9 @@ export const cardsData: Card[] = [
     blogs: [
       {
         title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
+        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+        tags: ['HM & Teachers ', 'SMC'],
+        date: '4 weeks'
       }
     ]
 
@@ -148,6 +195,10 @@ interface Blog {
   description: string;
   tags: string[];
   date: string;
+  objective?: string;
+  sqaDomain?: string;
+  subCategory?: string;
+  stepsTaken?: string[];
 }
 
 interface Card {
@@ -244,16 +295,16 @@ export const exposureVisit: ExposureVisit[] = [
 
 
 export const sortOptions: string[] = [
-    "A-Z",
-    "Z-A",
+  "A-Z",
+  "Z-A",
 ]
 
-export const roleOptions : string[] =  [
-    "Teachers",
-    "HM",
-    "SMC",
-    "Education Leader",
-    "Panchayat"
+export const roleOptions: string[] = [
+  "Teachers",
+  "HM",
+  "SMC",
+  "Education Leader",
+  "Panchayat"
 ]
 export interface ExposureVisit {
   objective: string;

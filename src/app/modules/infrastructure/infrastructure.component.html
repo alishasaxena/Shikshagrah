@@ -7,11 +7,20 @@
           class="relative flex items-center w-full h-12 rounded-full focus-within:shadow-lg bg-white overflow-hidden"
         >
           <div class="grid place-items-center h-full w-12 text-gray-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#223ea0">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#223ea0"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
           </div>
 
           <input
@@ -24,8 +33,19 @@
       </div>
     </div>
     <div class="filter-buttons flex">
-      <app-dropdown-checkbox [text]="'Sort by'" [lists]="sortOptions" (optionSelected)="handleSortOptionSelected($event)" [selectedOption]="selectedSortOption"> </app-dropdown-checkbox>
-      <app-dropdown-checkbox [text]="'Role'" [lists]="role"  (optionSelected)="handleRoleSelected($event)" [selectedOption]="selectedRole" ></app-dropdown-checkbox>
+      <app-dropdown-checkbox
+        [text]="'Sort by'"
+        [lists]="sortOptions"
+        (optionSelected)="handleSortOptionSelected($event)"
+        [selectedOption]="selectedSortOption"
+      >
+      </app-dropdown-checkbox>
+      <app-dropdown-checkbox
+        [text]="'Role'"
+        [lists]="role"
+        (optionSelected)="handleRoleSelected($event)"
+        [selectedOption]="selectedRole"
+      ></app-dropdown-checkbox>
     </div>
   </div>
 
@@ -37,6 +57,7 @@
         [description]="blog.description"
         [tags]="blog.tags"
         [index]="idx"
+        [blogData]="blogs"
       ></app-blog>
     </div>
   </div>
