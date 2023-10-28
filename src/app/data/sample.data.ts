@@ -66,7 +66,7 @@ export const cardsData: Card[] = [
         objective: 'To engage teachers and SMC members to create a plan to bring back students who have dropped out to school.',
         sqaDomain: 'Infrastructure',
         subCategory: 'Physical Infrastructure',
-        stepsTaken: [
+        stepsTaken:  [
           'Create a consolidated list of students who have dropped out of school',
           'Organise a meeting with teachers and SMC members',
           'Identify the reasons for dropouts',
@@ -105,10 +105,52 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
+        title: ' Vocabulary Expansion',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['English Teachers'],
+        date: '1 Month',
+        objective: 'Build vocabulary of student by conducting classroom activities',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Conduct an activity to assess the vocabulary level of students',
+          'Create a plan of action to introduce thematic vocabulary activities weekly',
+          'Spend 15 minutes to conduct thematic vocabulary activities and form sentences using newly learned words',
+          'Assess your students\' vocabulary periodically and make changes to your plan',
+          'Plan for a classroom-level showcase where students demonstrate their newly learned vocabulary and phrases'
+        ],
+      },
+      {
+        title: ' Vocabulary Expansion',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['English Teachers'],
+        date: '1 Month',
+        objective: 'Build vocabulary of student by conducting classroom activities',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Conduct an activity to assess the vocabulary level of students',
+          'Create a plan of action to introduce thematic vocabulary activities weekly',
+          'Spend 15 minutes to conduct thematic vocabulary activities and form sentences using newly learned words',
+          'Assess your students\' vocabulary periodically and make changes to your plan',
+          'Plan for a classroom-level showcase where students demonstrate their newly learned vocabulary and phrases'
+        ],
+      },
+       {
+        title: ' Vocabulary Expansion',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['English Teachers'],
+        date: '1 Month',
+        objective: 'Build vocabulary of student by conducting classroom activities',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Conduct an activity to assess the vocabulary level of students',
+          'Create a plan of action to introduce thematic vocabulary activities weekly',
+          'Spend 15 minutes to conduct thematic vocabulary activities and form sentences using newly learned words',
+          'Assess your students\' vocabulary periodically and make changes to your plan',
+          'Plan for a classroom-level showcase where students demonstrate their newly learned vocabulary and phrases'
+        ],
       }
     ]
   },
@@ -120,11 +162,60 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
-      }
+        title: "Teacher's motivation matters",
+        description: "HM will be able to assess the motivation level of their teachers and take necessary steps to keep teachers motivated",
+        tags: ['HM'],
+        date: '1 month',
+        objective: 'Ensure that the teachers are motivated',
+        sqaDomain: 'Human Resources',
+        subCategory: 'Mentoring opportunities',
+        stepsTaken: [
+          'Conduct a small baseline survey to map the motivation level of teachers',
+          'Organize small sharing circles with teachers daily',
+          'Schedule 1-1 conversation with every teacher in a month',
+          'Discuss the challenges faced by the teacher',
+          'Create an action plan with the teacher for identified areas of improvement',
+          'Observe Samiksha Reports to analyze the change in the motivation level of teachers'
+        ],
+      },
+      {
+        title: "Teacher Mela",
+        description: "Create a space for teachers to share their best practices, learning, and ideas by conducting a teacher mela.",
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To conduct effective engagement amongst all the teachers',
+        sqaDomain: 'Human Resources',
+        subCategory: 'Staff recognition',
+        stepsTaken: [
+          'Send a survey form to understand teacher\'s expectation from the mela',
+          'Organise & conduct a meeting with teachers to discuss the Teacher Mela',
+          'List down the activities for the Teacher Mela',
+          'Allocate the responsibilities for the Teacher Mela',
+          'Arrange the logistics to organise the mela',
+          'Communicate the schedule for teacher mela',
+          'Conduct the Teacher mela',
+          'Ask the teachers for the feedback post Mela',
+          'Document the Mela proceedings'
+        ],
+      },
+      {
+          title: "Effective Staff Meeting",
+          description: "It can help an HM to plan and conduct an effective staff meeting.",
+          tags: ['HM'],
+          date: '2 weeks',
+          objective: 'Plan and conduct an effective staff meeting.',
+          sqaDomain: 'Human Resources',
+          subCategory: 'Structures and processes',
+          stepsTaken: [
+            'Set the agenda for the staff meeting',
+            'Share the time, date, and agenda with the teachers',
+            'Plan the meeting flow',
+            'Share the discussion points with teachers',
+            'Ask any teacher to write minutes during the meeting',
+            'Discuss the possible agenda for the next meeting',
+            'Ask teachers for feedback and document it'
+          ],
+      },
     ]
   },
   {
@@ -135,11 +226,58 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
-      }
+        title: 'Sensitization for inclusion',
+        description: 'To sensitize teachers and SMCs towards under represented groups',
+        tags: ['Education Leader'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken:[
+          'Collect data on the under-represented groups\' (SEDGs) children in your school/community',
+          'Communicate date and agenda with teachers and SMC members for a meeting',
+          'Share the data collected on the SEDGs with teachers and SMCs in the meeting',
+          'List down the challenges in access to their education in the meeting',
+          'Conduct an open forum to understand the views of teachers and SMCs',
+          'Identify the approaches to include under-represented groups in the school',
+          'Plan for a follow-up meeting to discuss the implementation of the identified approaches for inclusion',
+          'Document the minutes of the meeting'
+        ],
+      },
+      {
+        title: 'Improving infrastructure for students with special needs',
+        description: 'To improve the school infrastructure and resources to increase access for students with special needs',
+        tags: ['Education Leader'],
+        date: '1 Month',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken:[
+          'Plan to visit the schools in the cluster',
+          'Visit to assess the current resources and infrastructure available in the schools',
+          'Detail the needs of the schools which need to be procured',
+          'Create a proposal for the procurement of resources for schools in the cluster',
+          'Share the proposal with the BEO/BRP'
+        ]
+      },
+      {
+        title: 'Unity in Diversity',
+        description: 'Using Republic day as an opportunity to help bridge the gap created by the pandemic and once again inculcate the sense of belonging by organizing an event where each stakeholder involve gets the opportunity to present their views and interact with each other.',
+        tags: ['Head teacher'],
+        date: '1 Month',
+        objective: 'HT will be able to involve community to conduct Republic day effectively',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          'Organize & conduct a meeting with teachers to discuss Republic Day',
+          'List down the activities for the event',
+          'Identify ways in which people in the community can contribute to the event',
+          'Reach out to the community to support the event',
+          'Allocate tasks of the event among the teachers and community',
+          'Conduct the Republic Day event',
+          'Take feedback from the attendees of the event'
+        ]
+      },
     ]
   },
   {
@@ -150,10 +288,56 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
+        title: 'Building a Shared School Vision',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['School Leaders'],
+        date: '2 weeks',
+        objective: 'School leaders (Principals, HMs and HTs) will conduct activities for increasing enrolment of students in their schools.',
+        sqaDomain: 'Management & Governance',
+        subCategory: 'School Vision',
+        stepsTaken: [
+          'Plan and invite all staff members for a learning circle',
+          'During the learning circle, discuss and gather info about the present situation of the school',
+          'Identify and make note of the top priorities of the school',
+          'Write together a clear shared vision statement',
+          'Finalize the vision statement using the checklist',
+          'Conclude the learning circle with action steps for achieving the vision',
+          'Collect feedback from staff members on their experience'
+        ]
+      },
+       {
+        title: 'Making the Vision Come Alive',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['School Leaders'],
+        date: '2 weeks',
+        objective: 'Block and district level officials will support school leaders in conducting enrolment program to increase the enrolment in their schools.',
+        sqaDomain: 'Management & Governance',
+        subCategory: 'Communication with Community',
+        stepsTaken:[
+          'Conduct a meeting to plan activities for the campaign with staff members',
+          'Create a schedule & assign responsibilities for conducting the activities',
+          'Invite the parents and students to participate in the campaign',
+          'Conduct the activities for the school vision campaign',
+          'Capture the best moments of the campaign',
+          'Reflect on the campaign using this form'
+        ]
+      },
+       {
+        title: 'Aao School Chalein',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['Principals', 'HMs', 'HTs'],
+        date: '1 Month',
+        objective: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
+        sqaDomain: 'Management & Governance',
+        subCategory: 'Admission Drive',
+        stepsTaken:[
+          'Collect and analyze the enrollment data from the last 5 years',
+          'Conduct a meeting with teachers and SMC members to discuss and set the enrollment target for this year',
+          'Form a working committee and plan activities and timeline for the enrollment program',
+          'Conduct different enrollment activities along with the working committee',
+          'Calculate the percentage increase in enrollment from the last year',
+          'Create an enrollment report'
+        ]
       }
     ]
   },
@@ -165,10 +349,52 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
+        title: 'Game Day with parents',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Parent Engagement',
+        stepsTaken: [
+          "Assess the current resources and infrastructure available in the school",
+          "Detail the needs of the school",
+          "Identify resources that the community can support with",
+          "List the requirements which needs to be procured",
+          "Share the list with the CRP",
+        ]
+      },
+      {
+        title: 'Gender Equitable Parenting ',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Parent Engagement',
+        stepsTaken: [
+          "Assess the current resources and infrastructure available in the school",
+          "Detail the needs of the school",
+          "Identify resources that the community can support with",
+          "List the requirements which needs to be procured",
+          "Share the list with the CRP",
+        ]
+      },
+      {
+        title: 'పిల్లలకోసం PTM',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Parent Engagement',
+        stepsTaken: [
+          "Assess the current resources and infrastructure available in the school",
+          "Detail the needs of the school",
+          "Identify resources that the community can support with",
+          "List the requirements which needs to be procured",
+          "Share the list with the CRP",
+        ]
       }
     ]
   },
@@ -180,10 +406,20 @@ export const cardsData: Card[] = [
     route: '/infrastructure',
     blogs: [
       {
-        title: 'To conduct an exposure visit for parents and students to local primary schools.',
-        description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-        tags: ['HM & Teachers ', 'SMC'],
-        date: '4 weeks'
+        title: 'School resources',
+        description: 'The HM understands the importance of having good school resources',
+        tags: ['HM'],
+        date: '2 weeks',
+        objective: 'To improve the resources available in the school',
+        sqaDomain: '',
+        subCategory: 'Physical Infrastructure',
+        stepsTaken: [
+          "Assess the current resources and infrastructure available in the school",
+          "Detail the needs of the school",
+          "Identify resources that the community can support with",
+          "List the requirements which needs to be procured",
+          "Share the list with the CRP",
+        ]
       }
     ]
 
@@ -195,10 +431,10 @@ interface Blog {
   description: string;
   tags: string[];
   date: string;
-  objective?: string;
-  sqaDomain?: string;
-  subCategory?: string;
-  stepsTaken?: string[];
+  objective: string;
+  sqaDomain: string;
+  subCategory: string;
+  stepsTaken: string[];
 }
 
 interface Card {
@@ -295,16 +531,16 @@ export const exposureVisit: ExposureVisit[] = [
 
 
 export const sortOptions: string[] = [
-  "A-Z",
-  "Z-A",
+    "A-Z",
+    "Z-A",
 ]
 
-export const roleOptions: string[] = [
-  "Teachers",
-  "HM",
-  "SMC",
-  "Education Leader",
-  "Panchayat"
+export const roleOptions : string[] =  [
+    "Teachers",
+    "HM",
+    "SMC",
+    "Education Leader",
+    "Panchayat"
 ]
 export interface ExposureVisit {
   objective: string;
