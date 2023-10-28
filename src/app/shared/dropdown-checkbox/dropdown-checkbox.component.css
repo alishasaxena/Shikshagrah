@@ -31,6 +31,10 @@
   border-bottom: 1px solid var(--background-color);
   padding: 0.4rem;
 }
+
+.dropdown-infra li:last-child {
+  border-bottom: 0;
+}
 .text-infra {
   /* font-family: Noto Sans; */
   font-size: 0.75rem;

@@ -8,4 +8,5 @@ import { cardsData } from 'src/app/data/sample.data';
 })
 export class MicroImprovementComponent {
   cards = cardsData;
+
 }

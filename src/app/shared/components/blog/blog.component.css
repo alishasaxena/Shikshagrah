@@ -33,7 +33,7 @@
 
 .description {
   font-size: 1rem;
-  overflow: scroll;
+  /* overflow: scroll; */
   color: var(--charcoal-gray);
   font-weight: 400 !important;
   font-family: Happy Monkey;

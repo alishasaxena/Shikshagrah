@@ -40,51 +40,129 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m1.png',
     buttonLabel: 'Learn More',
-    route: '/infrastructure'
+    route: '/infrastructure',
+    blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+      description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+      tags: ['HM & Teachers ', 'SMC'],
+      date: '4 weeks'
+      }
+      ]
   },
   {
     title: 'curriculum, Pedagogy Assessment ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m3.png',
     buttonLabel: 'Explore',
-    route: '/infrastructure'
+    route: '/infrastructure',
+     blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
+      }
+    ]
   },
   {
     title: 'Human Resources',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m4.png',
     buttonLabel: 'Read More',
-    route: '/infrastructure'
+    route: '/infrastructure',
+     blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
+      }
+    ]
   },
   {
     title: 'Inclusive Practices',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m5.png',
     buttonLabel: 'Discover',
-    route: '/infrastructure'
+    route: '/infrastructure',
+     blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
+      }
+    ]
   },
   {
     title: 'Management & Governance',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m6.png',
     buttonLabel: 'Get Started',
-    route: '/infrastructure'
+    route: '/infrastructure',
+     blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+      description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+      tags: ['HM & Teachers ', 'SMC'],
+      date: '4 weeks'
+      }
+    ]
   },
   {
     title: 'Leadership',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m7.png',
     buttonLabel: 'View Details',
-    route: '/infrastructure'
+    route: '/infrastructure',
+     blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
+      }
+    ]
   },
   {
     title: 'Beneficiary satisfaction',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m2.png',
     buttonLabel: 'See More',
-    route: '/infrastructure'
+    route: '/infrastructure',
+    blogs: [
+      {
+        title: 'To conduct an exposure visit for parents and students to local primary schools.',
+    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+    tags: ['HM & Teachers ', 'SMC'],
+    date: '4 weeks'
+      }
+    ]
+
   },
 ];
+
+interface Blog {
+  title: string;
+  description: string;
+  tags: string[];
+  date: string;
+}
+
+interface Card {
+  title: string;
+  description: string;
+  image: string;
+  buttonLabel: string;
+  route: string;
+  blogs?: Blog[];
+}
+
+export interface CardsData {
+  cardsData: Card[];
+}
+
 
 export const blogsData: Blog[] = [
   {
@@ -163,29 +241,17 @@ export const exposureVisit: ExposureVisit[] = [
   }
 ];
 
-export const  filterOptions: string[] =  [
-    "Physical Infrastructure",
-    "Provision of Food (MDM, Canteen)",
-    "Safety Provision",
-    "Access (Enrolment Tracker, Dropout, UDISE)",
-    "Sports & Playground",
-    "Sanitation (Health and Hygiene)",
-    "Safety (Physical and Psychological)"
-]
+
 
 export const sortOptions: string[] = [
     "A-Z",
     "Z-A",
-    "Recently Uploaded",
-    "Most Downloads",
-    "For Teachers",
-    "For HT/Officials",
 ]
 
 export const roleOptions : string[] =  [
     "Teachers",
-    "HM (Headmaster)",
-    "SMC (School Management Committee)",
+    "HM",
+    "SMC",
     "Education Leader",
     "Panchayat"
 ]
@@ -199,13 +265,14 @@ export interface ExposureVisit {
   stepsTaken: any;
 }
 
-interface Card {
-  title: string;
-  description: string;
-  image: string;
-  buttonLabel: string;
-  route: string;
-}
+// interface Card {
+//   title: string;
+//   description: string;
+//   image: string;
+//   buttonLabel: string;
+//   route: string;
+//   blogs: Blog;
+// }
 
 interface Stats {
   stat: string;
@@ -228,9 +295,9 @@ interface CardDetail {
   tags: string[];
 }
 
-interface Blog {
-  title: string;
-  description: any;
-  date: string;
-  tags: any;
-}
+// interface Blog {
+//   title: string;
+//   description: any;
+//   date: string;
+//   tags: any;
+// }

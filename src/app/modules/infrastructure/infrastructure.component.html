@@ -24,9 +24,8 @@
       </div>
     </div>
     <div class="filter-buttons flex">
-      <app-dropdown-checkbox [text]="'Sort by'" [lists]="sortOptions"> </app-dropdown-checkbox>
-      <app-dropdown-checkbox [text]="'Filters'" [lists]="filter"></app-dropdown-checkbox>
-      <app-dropdown-checkbox [text]="'Role'" [lists]="role"></app-dropdown-checkbox>
+      <app-dropdown-checkbox [text]="'Sort by'" [lists]="sortOptions" (optionSelected)="handleSortOptionSelected($event)" [selectedOption]="selectedSortOption"> </app-dropdown-checkbox>
+      <app-dropdown-checkbox [text]="'Role'" [lists]="role"  (optionSelected)="handleRoleSelected($event)" [selectedOption]="selectedRole" ></app-dropdown-checkbox>
     </div>
   </div>
 

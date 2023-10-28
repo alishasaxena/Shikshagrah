@@ -8,7 +8,7 @@
     <a [routerLink]="link" class="card-title cursor-pointer">
       {{ title }}
     </a>
-    <div *ngIf="active" >
+    <div *ngIf="active" class="flex flex-col gap-4">
       <a [routerLink]="link">
         <p class="card-description">{{ description }}</p>
       </a>

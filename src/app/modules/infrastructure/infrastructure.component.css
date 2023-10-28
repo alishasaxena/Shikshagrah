@@ -11,6 +11,7 @@
 .bar-options {
   display: flex;
   /* align-items: center; */
+  justify-content: space-between;
   gap: 2.5rem;
   align-self: stretch;
   width: 100%;
@@ -19,7 +20,7 @@
 }
 
 .search-bar {
-  width: 30rem;
+  width: 34rem;
 }
 
 .filter-buttons {
