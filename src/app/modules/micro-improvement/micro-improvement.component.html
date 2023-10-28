@@ -18,6 +18,9 @@
           [blogData]="card.blogs"
         ></app-card>
       </div>
+      <div *ngIf="!cards.length">
+        No Cards Found ! 
+      </div>
     </div>
   </div>
 </div>

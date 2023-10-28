@@ -34,7 +34,7 @@ export class InfrastructureComponent implements OnInit {
 
   filterBlogsByRole(role: string) {
     return this.blogs.filter(blog => blog.tags.includes(role));
-  }
+  }  
 
   handleRoleSelected(role: string) {
     this.selectedRole = role;

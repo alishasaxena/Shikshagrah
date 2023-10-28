@@ -452,42 +452,42 @@ export interface CardsData {
 
 
 export const blogsData: Blog[] = [
-  {
-    title: 'To conduct an exposure visit for parents and students to local primary schools.',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'SMC'],
-    date: '4 weeks'
-  },
-  {
-    title: 'To enable community to improve the infrastructural development of community surrounding to make the physical space engaging and lively',
-    description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
-    tags: ['HM & Teachers ', 'Panchayat'],
-    date: '4 weeks'
-  },
-  {
-    title: 'To improve the resources available in the school',
-    description: 'The HM understands the importance of having good school resources.',
-    tags: ['HM'],
-    date: '4 weeks'
-  },
-  {
-    title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
-    description: '',
-    tags: ['Teachers', 'Education'],
-    date: '4 weeks'
-  },
-  {
-    title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
-    description: 'HTs takes a walk around school to ensure that the difference spaces in the school',
-    tags: ['HT And Officials'],
-    date: '4 weeks'
-  },
-  {
-    title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
-    description: 'Building as a Learning Aid , or BaLA - create a plan to develop',
-    tags: ['HT And Officials'],
-    date: '4 weeks'
-  },
+  // {
+  //   title: 'To conduct an exposure visit for parents and students to local primary schools.',
+  //   description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+  //   tags: ['HM & Teachers ', 'SMC'],
+  //   date: '4 weeks'
+  // },
+  // {
+  //   title: 'To enable community to improve the infrastructural development of community surrounding to make the physical space engaging and lively',
+  //   description: 'This event may be organized in the village or community a few months before enrolment into Std I and once again once at the time when Std I classes begins.',
+  //   tags: ['HM & Teachers ', 'Panchayat'],
+  //   date: '4 weeks'
+  // },
+  // {
+  //   title: 'To improve the resources available in the school',
+  //   description: 'The HM understands the importance of having good school resources.',
+  //   tags: ['HM'],
+  //   date: '4 weeks'
+  // },
+  // {
+  //   title: 'To engage with teachers and SMC members to create a plan to bring back students who have dropped out to school.',
+  //   description: '',
+  //   tags: ['Teachers', 'Education'],
+  //   date: '4 weeks'
+  // },
+  // {
+  //   title: 'HT will take a walk around the school to observe that proper safety measures are implemented.',
+  //   description: 'HTs takes a walk around school to ensure that the difference spaces in the school',
+  //   tags: ['HT And Officials'],
+  //   date: '4 weeks'
+  // },
+  // {
+  //   title: 'HT will be able to improve the infrastructural development within the school to make the physical space engaging and lively',
+  //   description: 'Building as a Learning Aid , or BaLA - create a plan to develop',
+  //   tags: ['HT And Officials'],
+  //   date: '4 weeks'
+  // },
 
 ];
 
