@@ -32,7 +32,9 @@ export class CardComponent {
   onCardClickHandler() {
     setTimeout(() => {
       // console.log(this.blogData)
-      this._as.shareCardData(this.blogData)
+      this._as.shareCardData(this.blogData);
+      this._as.updateClickedCardTitle(this.title);
+      console.log(this.title, 'crltlx')
     }, 200);
     this.router.navigate([this.link]);
   }

@@ -7,7 +7,7 @@ import {
   providedIn: 'root'
 })
 export class AppServiceService {
-
+  clickedCardTitle!: string;
   constructor() { }
 
   selectedCardBlogData: any
@@ -16,10 +16,9 @@ export class AppServiceService {
     new EventEmitter<any>();
   @Output('onCardSelection') cardSelected: EventEmitter<any> =
     new EventEmitter<any>();
-
   @Output('onPrevNextClick') onPrevNextClick: EventEmitter<any> =
     new EventEmitter<any>();
-
+  
 
   // shareBlogData(index: number) {
   //   this.blogSelected.emit(index)
@@ -33,4 +32,9 @@ export class AppServiceService {
     this.selectedCardBlogData = [...data]
     this.cardSelected.emit(data)
   }
+
+   updateClickedCardTitle(title: string) {
+    this.clickedCardTitle = title;
+  }
+ 
 }

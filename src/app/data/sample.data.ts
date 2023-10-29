@@ -40,7 +40,7 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m1.png',
     buttonLabel: 'Learn More',
-    route: '/infrastructure',
+    route: '/domain/infrastructure',
     blogs: [
       {
         title: 'School resources',
@@ -48,8 +48,10 @@ export const cardsData: Card[] = [
         tags: ['HM'],
         date: '2 weeks',
         objective: 'To improve the resources available in the school',
-        sqaDomain: '',
+        sqaDomain: 'Infrastructure',
         subCategory: 'Physical Infrastructure',
+        isVideo: true,
+
         stepsTaken: [
           "Assess the current resources and infrastructure available in the school",
           "Detail the needs of the school",
@@ -84,7 +86,7 @@ export const cardsData: Card[] = [
         tags: ['HT', 'SMC'],
         date: '2 weeks',
         objective: 'To conduct an exposure visit for parents and students to local primary schools.',
-        sqaDomain: '',
+        sqaDomain: 'Infrastructure',
         subCategory: 'Physical Infrastructure',
         stepsTaken: [
           'Identify the local primary school to visit for exposure',
@@ -102,7 +104,7 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m3.png',
     buttonLabel: 'Explore',
-    route: '/infrastructure',
+    route: '/domain/curriculum',
     blogs: [
       {
         title: ' Vocabulary Expansion',
@@ -110,7 +112,7 @@ export const cardsData: Card[] = [
         tags: ['English Teachers'],
         date: '1 Month',
         objective: 'Build vocabulary of student by conducting classroom activities',
-        sqaDomain: '',
+        sqaDomain: 'curriculum, Pedagogy Assessment',
         subCategory: 'Physical Infrastructure',
         stepsTaken: [
           'Conduct an activity to assess the vocabulary level of students',
@@ -126,7 +128,7 @@ export const cardsData: Card[] = [
         tags: ['English Teachers'],
         date: '1 Month',
         objective: 'Build vocabulary of student by conducting classroom activities',
-        sqaDomain: '',
+        sqaDomain: 'curriculum, Pedagogy Assessment',
         subCategory: 'Physical Infrastructure',
         stepsTaken: [
           'Conduct an activity to assess the vocabulary level of students',
@@ -142,7 +144,7 @@ export const cardsData: Card[] = [
         tags: ['English Teachers'],
         date: '1 Month',
         objective: 'Build vocabulary of student by conducting classroom activities',
-        sqaDomain: '',
+        sqaDomain: 'curriculum, Pedagogy Assessment',
         subCategory: 'Physical Infrastructure',
         stepsTaken: [
           'Conduct an activity to assess the vocabulary level of students',
@@ -159,7 +161,7 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m4.png',
     buttonLabel: 'Read More',
-    route: '/infrastructure',
+    route: '/domain/hr',
     blogs: [
       {
         title: "Teacher's motivation matters",
@@ -223,7 +225,7 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m5.png',
     buttonLabel: 'Discover',
-    route: '/infrastructure',
+    route: '/domain/practices',
     blogs: [
       {
         title: 'Sensitization for inclusion',
@@ -231,7 +233,7 @@ export const cardsData: Card[] = [
         tags: ['Education Leader'],
         date: '2 weeks',
         objective: 'To improve the resources available in the school',
-        sqaDomain: '',
+        sqaDomain: 'Inclusive Practices',
         subCategory: 'Physical Infrastructure',
         stepsTaken:[
           'Collect data on the under-represented groups\' (SEDGs) children in your school/community',
@@ -250,7 +252,7 @@ export const cardsData: Card[] = [
         tags: ['Education Leader'],
         date: '1 Month',
         objective: 'To improve the resources available in the school',
-        sqaDomain: '',
+        sqaDomain: 'Inclusive Practices',
         subCategory: 'Physical Infrastructure',
         stepsTaken:[
           'Plan to visit the schools in the cluster',
@@ -266,7 +268,7 @@ export const cardsData: Card[] = [
         tags: ['Head teacher'],
         date: '1 Month',
         objective: 'HT will be able to involve community to conduct Republic day effectively',
-        sqaDomain: '',
+        sqaDomain: 'Inclusive Practices',
         subCategory: 'Physical Infrastructure',
         stepsTaken: [
           'Organize & conduct a meeting with teachers to discuss Republic Day',
@@ -285,7 +287,7 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m6.png',
     buttonLabel: 'Get Started',
-    route: '/infrastructure',
+    route: '/domain/management',
     blogs: [
       {
         title: 'Building a Shared School Vision',
@@ -341,12 +343,13 @@ export const cardsData: Card[] = [
       }
     ]
   },
+  // data not provided for leadership
   {
     title: 'Leadership',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ',
     image: 'assets/images/micro-improve/m7.png',
     buttonLabel: 'View Details',
-    route: '/infrastructure',
+    route: '/domain/leadership',
     blogs: [
       {
         title: 'Game Day with parents',
@@ -403,22 +406,56 @@ export const cardsData: Card[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
     image: 'assets/images/micro-improve/m2.png',
     buttonLabel: 'See More',
-    route: '/infrastructure',
+    route: '/domain/beneficiary',
     blogs: [
       {
-        title: 'School resources',
-        description: 'The HM understands the importance of having good school resources',
-        tags: ['HM'],
-        date: '2 weeks',
-        objective: 'To improve the resources available in the school',
-        sqaDomain: '',
-        subCategory: 'Physical Infrastructure',
+        title: 'Enabling collaboration between school and parents',
+        description: 'Fostering collaboration between schools and parents involves creating open channels for communication, shared educational goals, and active engagement to ensure the holistic development and success of students.',
+        tags: ['Head Teachers'],
+        date: '1 month',
+        objective: 'Develop parent engagement plan',
+        sqaDomain: 'Beneficiary satisfaction',
+        subCategory: 'Parent Engagement',
         stepsTaken: [
-          "Assess the current resources and infrastructure available in the school",
-          "Detail the needs of the school",
-          "Identify resources that the community can support with",
-          "List the requirements which needs to be procured",
-          "Share the list with the CRP",
+          'Identify the factors that motivate/demotivate parents to participate in school activities',
+          'Take suggestions from SMC/standing committee members on parents\' involvement for improving students\' learning',
+          'Conduct a staff meeting to discuss parents\' expectations to improve students\' learning and enablers/barriers for the same',
+          'List down priority areas for parents\' engagement through meeting reflections',
+          'Develop an annual calendar of parent engagement activities'
+        ]
+      },
+       {
+        title: 'Learning at Home',
+        description: 'Fostering collaboration between schools and parents involves creating open channels for communication, shared educational goals, and active engagement to ensure the holistic development and success of students.',
+        tags: ['Head Teachers'],
+        date: '1 month',
+        objective: "Orienting parents on how they can engage in students' learning process at home ",
+        sqaDomain: 'Beneficiary satisfaction',
+        subCategory: 'Parent Engagement',
+        stepsTaken:[
+          'Collaborate with teachers/SMC members to conduct home visits to understand the home scenario',
+          'Conduct a staff meeting to discuss & prepare guidelines for parents\' engagement in the student learning process at home',
+          'Organize a session for parents to orient on the importance of parental engagement in children\'s learning',
+          'Discuss the guidelines with parents and take their suggestions on it',
+          'Finalize and share the guidelines with them'
+        ]
+      },
+       {
+        title: 'Game day with parents',
+        description: 'Fostering collaboration between schools and parents involves creating open channels for communication, shared educational goals, and active engagement to ensure the holistic development and success of students.',
+        tags: ['Head Teachers'],
+        date: '1 month',
+        objective: 'To build an understanding about the importance of regular attendance in the classroom',
+        sqaDomain: 'Beneficiary satisfaction',
+        subCategory: 'Parent Engagement',
+        stepsTaken: [
+          'Invite parents with invitation cards designed by students',
+          'During staff meeting, curate benefits & consequences of regular & irregular attendance respectively',
+          'During staff meeting, design game(s) with teachers & assign them roles as Facilitator, Co-facilitator, Observer for different games',
+          'During the game day, discuss benefits & consequences of regular & irregular attendance respectively with parents',
+          'During the game day, acknowledge parents of students who attend school regularly',
+          'Post game day, develop a collaborative action plan to overcome attendance barriers discussed with parents & teachers',
+          'Post game day, upload Self-Evaluation form and photographs from the "game day"'
         ]
       }
     ]
@@ -435,6 +472,8 @@ interface Blog {
   sqaDomain: string;
   subCategory: string;
   stepsTaken: string[];
+  isVideo? : boolean;
+
 }
 
 interface Card {

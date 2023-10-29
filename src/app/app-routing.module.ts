@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'explore', component: ExplorePageComponent }, // explore component yahn par.
   { path: 'micro-improvement', component: MicroImprovementComponent },
-  { path: 'infrastructure', component: InfrastructureComponent },
+  { path: 'domain/:title', component: InfrastructureComponent },
   { path: 'blog/:title', component: SingleBlogContentComponent },
 
 ];

@@ -8,9 +8,10 @@ import { Component, Input } from '@angular/core';
 export class ContentPageComponent {
   @Input() objective!: string;
   @Input() description!: string;
-  @Input() recommendedFor!: any;
-  @Input() recommendedDuration!: string;
-  @Input() sqaaDomain!: string;
-  @Input() subDomain!: string;
+  @Input() tags!: any;
+  @Input() date!: string;
+  @Input() sqaDomain!: string;
+  @Input() subCategory!: string;
   @Input() stepsTaken!: any;
+  @Input() isVideo!: boolean;
 }

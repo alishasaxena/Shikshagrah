@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { Router, NavigationEnd } from '@angular/router';
-import { navigationLinks } from 'src/app/data/sample.data';
+import { cardsData, CardsData, navigationLinks } from 'src/app/data/sample.data';
 import { Location } from '@angular/common';
 import { AppServiceService } from 'src/app/services/app-service.service';
 
@@ -15,9 +15,16 @@ export class HeaderComponent implements OnInit {
   isHomePage: boolean = false;
   isContentPage: boolean = false;
   showInfraHead = false;
+  cards = cardsData;
+  // currentUrl = window.location.pathname;
+  clickedCardTitle: string = '';
 
-  constructor(private dataService: DataService, private router: Router, private location: Location, public _as: AppServiceService) { }
+
+
+  constructor(private dataService: DataService, private router: Router, private location: Location, public _as: AppServiceService, private _appService: AppServiceService) { }
   ngOnInit(): void {
+    this.clickedCardTitle = this._appService.clickedCardTitle;
+    console.log('cardTitle', this._appService.clickedCardTitle)
     this.navLinks = navigationLinks;
     this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
@@ -34,7 +41,7 @@ export class HeaderComponent implements OnInit {
       this.isHomePage = true
     }
 
-    if (event.url.split('/')[1] === "infrastructure") {
+    if (event.url.split('/')[1] === "domain") {
       this.showInfraHead = true
     } else {
       this.showInfraHead = false

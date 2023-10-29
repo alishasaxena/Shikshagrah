@@ -11,13 +11,13 @@
                 <div>
                     <span>Recommended duration:</span>
                     <p>
-                        {{recommendedDuration}}
+                        {{date}}
                     </p>
                 </div>
                 <div>
                     <span>Recommended for:</span>
                     <div class="flex gap-2 mt-3 flex-wrap">
-                        <p *ngFor="let rec of recommendedFor" class="tag">
+                        <p *ngFor="let rec of tags" class="tag">
                             {{rec}}
                         </p>
                     </div>
@@ -25,13 +25,13 @@
                 <div>
                     <span>SQAA Domain:</span>
                     <p>
-                        {{sqaaDomain}}
+                        {{sqaDomain}}
                     </p>
                 </div>
                 <div>
                     <span>Sub- Domain:</span>
                     <p>
-                        {{subDomain}}
+                        {{subCategory}}
                     </p>
                 </div>
             
@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </div>
-        <div class="impact-story">
+        <div *ngIf="isVideo" class="impact-story">
             <h2>Impact Story</h2>
             <p>Mrs XYZ (HM, ABC school, Bangalore)</p>
             <div >
