@@ -14,10 +14,11 @@ export class InfrastructureComponent implements OnInit {
   // blogs = blogsData;
 
   blogs: any[] = [];
+  blogsData: any[] = []
   sortOptions = sortOptions;
   role = roleOptions;
-  selectedSortOption: string | null = null;
-  selectedRole: string | null = null;
+  selectedSortOption: string[] = [];
+  selectedRole: string[]= [];
 
   // exp = exposureVisit;
 
@@ -27,22 +28,41 @@ export class InfrastructureComponent implements OnInit {
     this._as.cardSelected.subscribe((data: any) => {
       console.log(data, "data")
       this.blogs = [...data]
+      this.blogsData = [...data]
     })
 
-    this.blogs = this._as.selectedCardBlogData
+    this.blogs = [...this._as.selectedCardBlogData]
+    this.blogsData = [...this._as.selectedCardBlogData]
+
   }
 
-  filterBlogsByRole(role: string) {
-    return this.blogs.filter(blog => blog.tags.includes(role));
+  filterBlogsByRole() {
+    // return this.blogs.filter(blog => blog.tags.includes(role));
+    this.blogs = [...this.blogsData]
+
+    return this.blogs.filter(item => item.tags.some((tag:string) => this.selectedRole.includes(tag)))
   }  
 
   handleRoleSelected(role: string) {
-    this.selectedRole = role;
-    this.blogs = this.filterBlogsByRole(role);
+    // this.selectedRole = role;
+    let isPresent = this.selectedRole.findIndex((item) => item == role)
+    if(isPresent > -1) {
+      // already present
+      this.selectedRole.splice(isPresent, 1)
+    }else {
+      // present
+      this.selectedRole.push(role)
+    }
+    // this.blogs = this.filterBlogsByRole(role);
+    if(this.selectedRole.length) {
+      this.blogs = this.filterBlogsByRole();
+    }else {
+      this.blogs = [...this.blogsData]
+    }
   }
 
   resetFilter() {
-    this.selectedRole = null;
+    this.selectedRole = [];
     this.blogs = blogsData;
   }
 
@@ -55,7 +75,18 @@ export class InfrastructureComponent implements OnInit {
   }
 
   handleSortOptionSelected(option: string) {
-    this.selectedSortOption = option;
+    // debugger
+    // this.selectedSortOption = option;
+    if (this.selectedSortOption.length && this.selectedSortOption[0] == option) {
+      this.selectedSortOption = []
+    }else {
+      this.selectedSortOption[0] = option
+    }
+
+    if (!this.selectedSortOption.length) {
+      this.blogs = [...this.blogsData]
+      return
+    }
     if (option === 'A-Z') {
       this.sortedCardsAtoZ();
     } else if (option === 'Z-A') {

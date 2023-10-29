@@ -33,6 +33,7 @@
   background-image: url(../../../assets/images/bg.png);
   background-size: cover;
   background-blend-mode: color-dodge;
+  height: 100vh;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {

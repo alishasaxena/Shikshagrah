@@ -16,14 +16,14 @@ export class DropdownCheckboxComponent implements OnInit{
   @Input() disabled!: boolean;
   @Input() borderRadius!: number;
   @Output() optionSelected: EventEmitter<string> = new EventEmitter<string>();
-  @Input() selectedOption!: string | null;
+  @Input() selectedOption: string[] = [];
 
 
   ngOnInit(): void {
     this.isOpen = false;
   }
   selectOption(option: string) {
-    this.selectedOption = option;
+    // this.selectedOption = option;
     this.optionSelected.emit(option);
   }
 
