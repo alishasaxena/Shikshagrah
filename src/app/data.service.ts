@@ -8,11 +8,4 @@ export class DataService {
 
   constructor() {}
 
-  setData(data: any): void {
-    this.sharedData = data;
-  }
-
-  getData(): any {
-    return this.sharedData;
-  }
 }
